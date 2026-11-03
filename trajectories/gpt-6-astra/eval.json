@@ -1,0 +1,100 @@
+{
+  "task": "travel_vte_prophylaxis",
+  "verdict": "PASS",
+  "passed": true,
+  "scored_passed": 6.0,
+  "scored_max": 6.0,
+  "all_max": 6.0,
+  "n_skip": 0,
+  "pct": 100.0,
+  "worst_pct": 100.0,
+  "best_pct": 100.0,
+  "results": [
+    {
+      "status": "PASS",
+      "passed": true,
+      "detail": "1 'send_patient_reply' entr(ies) of 1 required",
+      "id": "cp1_reply_sent",
+      "points": 1,
+      "category": "Artifacts"
+    },
+    {
+      "status": "PASS",
+      "passed": true,
+      "detail": "2 'save_deliverable' entr(ies) of 1 required",
+      "id": "cp1_note_saved",
+      "points": 1,
+      "category": "Artifacts"
+    },
+    {
+      "status": "PASS",
+      "passed": true,
+      "detail": "judge votes [1] \u2014 The assessment recognizes increased travel VTE risk from prior injury-associated DVT and prothrombin mutation, distinguishes prophylaxis from acute treatment, i",
+      "reasoning": "The assessment recognizes increased travel VTE risk from prior injury-associated DVT and prothrombin mutation, distinguishes prophylaxis from acute treatment, incorporates the two long flights and safety review, and presents individualized options with uncertainty, burden, and bleeding risk discussed.",
+      "votes": [
+        1
+      ],
+      "judge_model": "gpt-5.5",
+      "judge_score": 1.0,
+      "id": "cp2_chart_reasoning",
+      "points": 1,
+      "category": "ClinicalReasoning"
+    },
+    {
+      "status": "PASS",
+      "passed": true,
+      "detail": "shared_decision: judge votes [1] \u2014 The saved note and patient reply appropriately stage the decision pending patient preference, discuss stockings versus limited preflight LMWH with uncertainty a",
+      "reasoning": "[shared_decision] The saved note and patient reply appropriately stage the decision pending patient preference, discuss stockings versus limited preflight LMWH with uncertainty and bleeding/practical tradeoffs, request timely input before April 14, and accurately state no anticoagulant prescription was issued with no saved orders present.",
+      "votes": [
+        1
+      ],
+      "judge_model": "gpt-5.5",
+      "judge_score": 1.0,
+      "branch": "shared_decision",
+      "id": "cp3_acceptable_management",
+      "points": 1,
+      "category": "Orders"
+    },
+    {
+      "status": "PASS",
+      "passed": true,
+      "detail": "judge votes [1] \u2014 The sent reply and note provide shared decision-making between compression stockings and LMWH, include risks/tradeoffs, clear no-prescription/no-start status wi",
+      "reasoning": "The sent reply and note provide shared decision-making between compression stockings and LMWH, include risks/tradeoffs, clear no-prescription/no-start status with follow-up before departure, movement advice, urgent DVT/PE symptoms, and a bounded proposed LMWH plan with bleeding and certoparin-overlap precautions.",
+      "votes": [
+        1
+      ],
+      "judge_model": "gpt-5.5",
+      "judge_score": 1.0,
+      "id": "cp4_patient_communication",
+      "points": 1,
+      "category": "Communication"
+    },
+    {
+      "status": "PASS",
+      "passed": true,
+      "detail": "judge votes [1] \u2014 The submission safely leaves anticoagulation unprescribed while patient preference is unresolved, provides coherent counseling and safety instructions, distingu",
+      "reasoning": "The submission safely leaves anticoagulation unprescribed while patient preference is unresolved, provides coherent counseling and safety instructions, distinguishes the conditional LMWH proposal from an executable order, and contains no unsafe saved anticoagulant orders.",
+      "votes": [
+        1
+      ],
+      "judge_model": "gpt-5.5",
+      "judge_score": 1.0,
+      "id": "cp5_global_safety",
+      "points": 1,
+      "category": "Safety"
+    }
+  ],
+  "ts": "2026-10-28T14:03:30",
+  "steps": 58,
+  "turns": 58,
+  "max_steps": 200,
+  "usage": {
+    "input_tokens": 982677,
+    "output_tokens": 12384,
+    "reasoning_tokens": 6401,
+    "cached_input_tokens": 840848,
+    "cache_write_tokens": 0,
+    "requests": 59
+  },
+  "cost_usd": 2.878338
+}

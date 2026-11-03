@@ -1,0 +1,2077 @@
+{
+ "state": {
+  "case": {
+   "id": "vte-prophylaxis-travel",
+   "label": "VTE prophylaxis — pre-travel patient message (demo task)",
+   "reasonForVisit": "Patient portal message (04/10/2023): 32-year-old woman with a hereditary thrombophilia and a remote deep vein thrombosis asks for a prescription review before an international trip (flights April 14 and April 28). The hematology e-consult placed on 04/09/2023 has not been answered yet.",
+   "provider": "Alvarez, Dana, MD",
+   "department": "Family Medicine",
+   "patient": {
+    "mrn": "MRN1470939445",
+    "name": "Brandt, Annika",
+    "legal": "Brandt, Annika M",
+    "dob": "1990-11-09",
+    "sex": "F",
+    "age": 32,
+    "pronouns": "she/her/hers",
+    "language": "English",
+    "race": "White",
+    "ethnicity": "Not on file",
+    "address": "5940 Herrera Lane, New Kellystad OK 25704",
+    "phones": [
+     {
+      "label": "Mobile",
+      "num": "394-802-6542 x351",
+      "star": true
+     }
+    ],
+    "employer": "University — postdoctoral researcher (physics)",
+    "pcp": "Alvarez, Dana, MD — Family Medicine",
+    "coverage": "Commercial PPO (Primary)",
+    "emergencyContact": "Not on file",
+    "allergies": []
+   },
+   "encounters": [
+    {
+     "id": "8200600001",
+     "class": "ambulatory",
+     "type": "Portal Message",
+     "date": "2022-06-18",
+     "department": "INTERNAL MEDICINE",
+     "visitType": "Portal Message"
+    },
+    {
+     "id": "8200600002",
+     "class": "ambulatory",
+     "type": "Portal Message",
+     "date": "2022-06-29",
+     "department": "FAMILY MEDICINE",
+     "visitType": "Portal Message"
+    },
+    {
+     "id": "8200600003",
+     "class": "ambulatory",
+     "type": "Enrollment",
+     "date": "2022-07-31",
+     "department": "FAMILY MEDICINE",
+     "visitType": "Enrollment"
+    },
+    {
+     "id": "8200600004",
+     "class": "ambulatory",
+     "type": "Portal Message",
+     "date": "2022-08-14",
+     "department": "FAMILY MEDICINE",
+     "visitType": "Portal Message"
+    },
+    {
+     "id": "8200600005",
+     "class": "ambulatory",
+     "type": "Office Visit",
+     "date": "2022-08-15",
+     "department": "FAMILY MEDICINE",
+     "visitType": "Office Visit"
+    },
+    {
+     "id": "8200600006",
+     "class": "ambulatory",
+     "type": "Appointment",
+     "date": "2022-08-15",
+     "department": "LABORATORY",
+     "visitType": "Appointment"
+    },
+    {
+     "id": "8200600007",
+     "class": "ambulatory",
+     "type": "History",
+     "date": "2022-08-15",
+     "department": "FAMILY MEDICINE",
+     "visitType": "History"
+    },
+    {
+     "id": "8200600008",
+     "class": "ambulatory",
+     "type": "Portal Message",
+     "date": "2022-08-21",
+     "department": "FAMILY MEDICINE",
+     "visitType": "Portal Message"
+    },
+    {
+     "id": "8200600009",
+     "class": "ambulatory",
+     "type": "Order Entry",
+     "date": "2022-09-17",
+     "department": "FAMILY MEDICINE",
+     "visitType": "Order Entry"
+    },
+    {
+     "id": "8200600010",
+     "class": "ambulatory",
+     "type": "Portal Message",
+     "date": "2022-09-26",
+     "department": "FAMILY MEDICINE",
+     "visitType": "Portal Message"
+    },
+    {
+     "id": "8200600011",
+     "class": "ambulatory",
+     "type": "Telephone",
+     "date": "2022-09-26",
+     "department": "FAMILY MEDICINE",
+     "visitType": "Telephone"
+    },
+    {
+     "id": "8200600012",
+     "class": "ambulatory",
+     "type": "Portal Message",
+     "date": "2022-09-27",
+     "department": "FAMILY MEDICINE",
+     "visitType": "Portal Message"
+    },
+    {
+     "id": "8200600013",
+     "class": "ambulatory",
+     "type": "Portal Message",
+     "date": "2022-09-30",
+     "department": "FAMILY MEDICINE",
+     "visitType": "Portal Message"
+    },
+    {
+     "id": "8200600014",
+     "class": "ambulatory",
+     "type": "Telephone",
+     "date": "2022-09-30",
+     "department": "FAMILY MEDICINE",
+     "visitType": "Telephone"
+    },
+    {
+     "id": "8200600015",
+     "class": "ambulatory",
+     "type": "Appointment",
+     "date": "2022-11-07",
+     "department": "LAB DRAW",
+     "visitType": "Appointment"
+    },
+    {
+     "id": "8200600016",
+     "class": "ambulatory",
+     "type": "Order Entry",
+     "date": "2022-11-10",
+     "department": "FAMILY MEDICINE",
+     "visitType": "Order Entry"
+    },
+    {
+     "id": "8200600017",
+     "class": "ambulatory",
+     "type": "Refill",
+     "date": "2023-01-09",
+     "department": "FAMILY MEDICINE",
+     "visitType": "Refill"
+    },
+    {
+     "id": "8200600018",
+     "class": "ambulatory",
+     "type": "Portal Message",
+     "date": "2023-03-29",
+     "department": "FAMILY MEDICINE",
+     "visitType": "Portal Message"
+    },
+    {
+     "id": "8200600019",
+     "class": "ambulatory",
+     "type": "Portal Message",
+     "date": "2023-04-08",
+     "department": "FAMILY MEDICINE",
+     "visitType": "Portal Message"
+    },
+    {
+     "id": "8200600020",
+     "class": "ambulatory",
+     "type": "Telemedicine",
+     "date": "2023-04-09",
+     "department": "FAMILY MEDICINE",
+     "visitType": "Telemedicine"
+    },
+    {
+     "id": "8200600021",
+     "class": "ambulatory",
+     "type": "E-Consult",
+     "date": "2023-04-09",
+     "department": "HEMATOLOGY",
+     "visitType": "E-Consult"
+    },
+    {
+     "id": "8200600022",
+     "class": "ambulatory",
+     "type": "Telephone",
+     "date": "2023-04-10",
+     "department": "FAMILY MEDICINE",
+     "visitType": "Telephone",
+     "reason": "Pre-travel medication and safety reconciliation"
+    },
+    {
+     "id": "8200600023",
+     "class": "ambulatory",
+     "type": "Portal Message",
+     "date": "2023-04-10",
+     "department": "FAMILY MEDICINE",
+     "visitType": "Portal Message",
+     "reason": "Upcoming travel — prescription review"
+    }
+   ],
+   "problems": [
+    {
+     "code": "D68.52",
+     "system": "ICD-10",
+     "name": "Prothrombin gene mutation",
+     "onset": "2021-11-12",
+     "clazz": "Chronic",
+     "status": "Active",
+     "encounterId": null
+    },
+    {
+     "code": "E03.9",
+     "system": "ICD-10",
+     "name": "Hypothyroidism, unspecified type",
+     "onset": "2021-10-12",
+     "clazz": "Chronic",
+     "status": "Active",
+     "encounterId": null
+    },
+    {
+     "code": "E53.8",
+     "system": "ICD-10",
+     "name": "Vitamin B12 deficiency",
+     "onset": "2022-11-10",
+     "clazz": "Chronic",
+     "status": "Active",
+     "encounterId": "8200600016"
+    },
+    {
+     "code": "H18.9",
+     "system": "ICD-10",
+     "name": "Cornea disorder",
+     "onset": "2021-11-28",
+     "clazz": "Acute",
+     "status": "Active",
+     "encounterId": null
+    },
+    {
+     "code": "H92.02",
+     "system": "ICD-10",
+     "name": "Otalgia, left ear",
+     "onset": "2021-10-17",
+     "clazz": "Acute",
+     "status": "Active",
+     "encounterId": null
+    },
+    {
+     "code": "H93.12",
+     "system": "ICD-10",
+     "name": "Tinnitus of left ear",
+     "onset": "2021-10-17",
+     "clazz": "Acute",
+     "status": "Active",
+     "encounterId": null
+    },
+    {
+     "code": "M79.671",
+     "system": "ICD-10",
+     "name": "Pain in right foot",
+     "onset": "2022-03-13",
+     "clazz": "Acute",
+     "status": "Active",
+     "encounterId": null
+    },
+    {
+     "code": "R42",
+     "system": "ICD-10",
+     "name": "Dizziness and giddiness",
+     "onset": "2022-08-15",
+     "clazz": "Acute",
+     "status": "Active",
+     "encounterId": "8200600005"
+    },
+    {
+     "code": "R51.9",
+     "system": "ICD-10",
+     "name": "Headache, unspecified",
+     "onset": "2021-10-15",
+     "clazz": "Acute",
+     "status": "Active",
+     "encounterId": null
+    },
+    {
+     "code": "S01.01XA",
+     "system": "ICD-10",
+     "name": "Scalp laceration, initial encounter",
+     "onset": "2021-10-12",
+     "clazz": "Acute",
+     "status": "Active",
+     "encounterId": null
+    },
+    {
+     "code": "S05.90XA",
+     "system": "ICD-10",
+     "name": "Unspecified injury of unspecified eye and orbit, initial encounter",
+     "onset": "2021-11-14",
+     "clazz": "Acute",
+     "status": "Active",
+     "encounterId": null
+    },
+    {
+     "code": "S06.0X0D",
+     "system": "ICD-10",
+     "name": "Concussion without loss of consciousness, subsequent encounter",
+     "onset": "2021-10-16",
+     "clazz": "Acute",
+     "status": "Active",
+     "encounterId": null
+    },
+    {
+     "code": "S09.90XA",
+     "system": "ICD-10",
+     "name": "Unspecified injury of head, initial encounter",
+     "onset": "2021-10-12",
+     "clazz": "Acute",
+     "status": "Active",
+     "encounterId": null
+    },
+    {
+     "code": "S92.001A",
+     "system": "ICD-10",
+     "name": "Unspecified fracture of right calcaneus, initial encounter for closed fracture",
+     "onset": "2022-03-13",
+     "clazz": "Acute",
+     "status": "Active",
+     "encounterId": null
+    },
+    {
+     "code": "S93.601A",
+     "system": "ICD-10",
+     "name": "Unspecified sprain of right foot, initial encounter",
+     "onset": "2022-03-20",
+     "clazz": "Acute",
+     "status": "Active",
+     "encounterId": null
+    },
+    {
+     "code": "S99.921A",
+     "system": "ICD-10",
+     "name": "Unspecified injury of right foot, initial encounter",
+     "onset": "2022-03-13",
+     "clazz": "Acute",
+     "status": "Active",
+     "encounterId": null
+    },
+    {
+     "code": "T15.01XA",
+     "system": "ICD-10",
+     "name": "Foreign body in cornea, right eye, initial encounter",
+     "onset": "2021-11-14",
+     "clazz": "Acute",
+     "status": "Active",
+     "encounterId": null
+    },
+    {
+     "code": "T15.01XD",
+     "system": "ICD-10",
+     "name": "Foreign body in cornea, right eye, subsequent encounter",
+     "onset": "2021-12-04",
+     "clazz": "Acute",
+     "status": "Active",
+     "encounterId": null
+    },
+    {
+     "code": "T15.91XA",
+     "system": "ICD-10",
+     "name": "Foreign body of right external eye, initial encounter",
+     "onset": "2021-11-14",
+     "clazz": "Acute",
+     "status": "Active",
+     "encounterId": null
+    },
+    {
+     "code": "W20.8XXA",
+     "system": "ICD-10",
+     "name": "Other cause of strike by thrown, projected or falling object, initial encounter",
+     "onset": "2021-11-14",
+     "clazz": "Acute",
+     "status": "Active",
+     "encounterId": null
+    },
+    {
+     "code": "W21.89XA",
+     "system": "ICD-10",
+     "name": "Striking against or struck by other sports equipment, initial encounter",
+     "onset": "2021-10-12",
+     "clazz": "Acute",
+     "status": "Active",
+     "encounterId": null
+    },
+    {
+     "code": "Y92.009",
+     "system": "ICD-10",
+     "name": "Unspecified place in unspecified non-institutional (private) residence as the place of occurrence of the external cause",
+     "onset": "2021-11-14",
+     "clazz": "Acute",
+     "status": "Active",
+     "encounterId": null
+    },
+    {
+     "code": "Y92.832",
+     "system": "ICD-10",
+     "name": "Beach as the place of occurrence of the external cause",
+     "onset": "2021-10-13",
+     "clazz": "Acute",
+     "status": "Active",
+     "encounterId": null
+    },
+    {
+     "code": "Y93.18",
+     "system": "ICD-10",
+     "name": "Activity, surfing, windsurfing and boogie boarding",
+     "onset": "2021-10-13",
+     "clazz": "Acute",
+     "status": "Active",
+     "encounterId": null
+    },
+    {
+     "code": "Y93.G1",
+     "system": "ICD-10",
+     "name": "Activity, food preparation and clean up",
+     "onset": "2021-11-14",
+     "clazz": "Acute",
+     "status": "Active",
+     "encounterId": null
+    },
+    {
+     "code": "Y99.8",
+     "system": "ICD-10",
+     "name": "Other external cause status",
+     "onset": "2021-11-14",
+     "clazz": "Acute",
+     "status": "Active",
+     "encounterId": null
+    },
+    {
+     "code": "Z00.00",
+     "system": "ICD-10",
+     "name": "Encounter for general adult medical examination without abnormal findings",
+     "onset": "2021-11-12",
+     "clazz": "Encounter",
+     "status": "Active",
+     "encounterId": null
+    },
+    {
+     "code": "Z11.59",
+     "system": "ICD-10",
+     "name": "Encounter for screening for other viral diseases",
+     "onset": "2021-11-12",
+     "clazz": "Encounter",
+     "status": "Active",
+     "encounterId": null
+    },
+    {
+     "code": "Z12.4",
+     "system": "ICD-10",
+     "name": "Encounter for screening for malignant neoplasm of cervix",
+     "onset": "2022-08-15",
+     "clazz": "Encounter",
+     "status": "Active",
+     "encounterId": "8200600005"
+    },
+    {
+     "code": "Z23",
+     "system": "ICD-10",
+     "name": "Encounter for immunization",
+     "onset": "2022-01-29",
+     "clazz": "Encounter",
+     "status": "Active",
+     "encounterId": null
+    },
+    {
+     "code": "Z48.89",
+     "system": "ICD-10",
+     "name": "Encounter for other specified surgical aftercare",
+     "onset": "2021-11-12",
+     "clazz": "Encounter",
+     "status": "Active",
+     "encounterId": null
+    },
+    {
+     "code": "Z78.9",
+     "system": "ICD-10",
+     "name": "Other specified health status",
+     "onset": "2022-09-30",
+     "clazz": "Chronic",
+     "status": "Active",
+     "encounterId": "8200600013"
+    },
+    {
+     "code": "Z91.09",
+     "system": "ICD-10",
+     "name": "Other allergy status, other than to drugs and biological substances",
+     "onset": "2021-11-12",
+     "clazz": "Chronic",
+     "status": "Active",
+     "encounterId": null
+    }
+   ],
+   "medications": [
+    {
+     "id": "m1",
+     "name": "levothyroxine (Synthroid) 25 mcg tablet",
+     "dose": "25 mcg",
+     "freq": "QAM AC",
+     "route": "Oral",
+     "status": "active",
+     "intent": "order",
+     "started": "2022-09-27",
+     "encounterId": "8200600012",
+     "sig": "1 tablet by mouth each morning before breakfast",
+     "indication": "Hypothyroidism (E03.9)"
+    },
+    {
+     "id": "m2",
+     "name": "COVID-19 VAC, TRIS(PFIZER)(PF) 30 MCG/0.3 ML IM SUSP",
+     "dose": "0.3 mL",
+     "freq": "Once",
+     "route": "Intramuscular",
+     "status": "completed",
+     "intent": "order",
+     "started": "2022-01-29",
+     "encounterId": null
+    },
+    {
+     "id": "m3",
+     "name": "ofloxacin (Ocuflox) 0.3 % ophthalmic solution",
+     "dose": "1 drop",
+     "freq": "4X/DAY",
+     "route": "Ophthalmic",
+     "status": "active",
+     "intent": "order",
+     "started": "2021-12-05",
+     "encounterId": null,
+     "sig": "1 drop in the right eye four times daily",
+     "indication": "Corneal foreign body, right eye (T15.01XA)"
+    },
+    {
+     "id": "m4",
+     "name": "FLUORESCEIN 1 MG OPHT STRP",
+     "dose": "1 strip",
+     "freq": "Once",
+     "route": "Ophthalmic",
+     "status": "completed",
+     "intent": "order",
+     "started": "2021-11-14",
+     "encounterId": null
+    },
+    {
+     "id": "m5",
+     "name": "TETRACAINE HCL (PF) 0.5 % OPHT DROP",
+     "dose": "1 drop",
+     "freq": "Once",
+     "route": "Ophthalmic",
+     "status": "completed",
+     "intent": "order",
+     "started": "2021-11-14",
+     "encounterId": null
+    },
+    {
+     "id": "m6",
+     "name": "MAGNESIUM PO",
+     "dose": "",
+     "freq": "",
+     "route": "Oral",
+     "status": "active",
+     "intent": "order",
+     "started": "2021-11-13",
+     "encounterId": null,
+     "indication": "Vegan diet — supplementation"
+    },
+    {
+     "id": "m7",
+     "name": "cyanocobalamin (vitamin B-12) (VITAMIN B-12 PO)",
+     "dose": "",
+     "freq": "",
+     "route": "Oral",
+     "status": "active",
+     "intent": "order",
+     "started": "2021-11-13",
+     "encounterId": null,
+     "indication": "Vegan diet — supplementation"
+    },
+    {
+     "id": "m8",
+     "name": "cholecalciferol (vitamin D3) (VITAMIN D3 PO)",
+     "dose": "",
+     "freq": "",
+     "route": "Oral",
+     "status": "active",
+     "intent": "order",
+     "started": "2021-11-13",
+     "encounterId": null,
+     "indication": "Vegan diet — supplementation"
+    },
+    {
+     "id": "m9",
+     "name": "MAGNESIUM SULFATE IN WATER 2 GRAM/50 ML (4 %) IV PGBK",
+     "dose": "2 g",
+     "freq": "Once",
+     "route": "Intravenous",
+     "status": "completed",
+     "intent": "order",
+     "started": "2021-10-16",
+     "encounterId": null
+    },
+    {
+     "id": "m10",
+     "name": "NS IV BOLUS - 500 ML",
+     "dose": "500 mL",
+     "freq": "Once",
+     "route": "Intravenous",
+     "status": "completed",
+     "intent": "order",
+     "started": "2021-10-16",
+     "encounterId": null
+    },
+    {
+     "id": "m11",
+     "name": "IBUPROFEN 600 MG PO TABS",
+     "dose": "600 mg",
+     "freq": "Once",
+     "route": "Oral",
+     "status": "completed",
+     "intent": "order",
+     "started": "2021-10-13",
+     "encounterId": null
+    },
+    {
+     "id": "m12",
+     "name": "LIDOCAINE-EPINEPHRINE 2 %-1:100,000 INJ SOLN",
+     "dose": "",
+     "freq": "Once",
+     "route": "Infiltration",
+     "status": "completed",
+     "intent": "order",
+     "started": "2021-10-13",
+     "encounterId": null
+    }
+   ],
+   "observations": [
+    {
+     "id": "l001",
+     "name": "Anti-HCV",
+     "category": "laboratory",
+     "value": "Negative",
+     "code": "16128-1",
+     "system": "LOINC",
+     "flag": null,
+     "status": "final",
+     "datetime": "2021-11-13T06:33",
+     "panel": "Hepatitis C Antibody, IgG",
+     "specimen": "Blood"
+    },
+    {
+     "id": "l002",
+     "name": "Interpretation",
+     "category": "laboratory",
+     "value": "Screening for IgG antibody to hepatitis C virus (HCV) is NEGATIVE.",
+     "flag": null,
+     "status": "final",
+     "datetime": "2021-11-13T06:33",
+     "panel": "Hepatitis C Antibody, IgG",
+     "specimen": "Blood"
+    },
+    {
+     "id": "l003",
+     "name": "HPV",
+     "category": "laboratory",
+     "value": "Negative",
+     "flag": null,
+     "status": "final",
+     "datetime": "2022-08-20T21:12",
+     "panel": "HR-HPV Screen, NAAT - Reflex",
+     "specimen": "Cervical cytology (ThinPrep)"
+    },
+    {
+     "id": "l004",
+     "name": "Specimen Notes",
+     "category": "laboratory",
+     "value": "Thinprep",
+     "flag": null,
+     "status": "final",
+     "datetime": "2022-08-20T21:12",
+     "panel": "HR-HPV Screen, NAAT - Reflex",
+     "specimen": "Cervical cytology (ThinPrep)"
+    },
+    {
+     "id": "l005",
+     "name": "Specimen Source",
+     "category": "laboratory",
+     "value": "Endocervix",
+     "flag": null,
+     "status": "final",
+     "datetime": "2022-08-20T21:12",
+     "panel": "HR-HPV Screen, NAAT - Reflex",
+     "specimen": "Cervical cytology (ThinPrep)"
+    },
+    {
+     "id": "l006",
+     "name": "Specimen Type",
+     "category": "laboratory",
+     "value": "Cervical Cytology Sample (ThinPrep)",
+     "flag": null,
+     "status": "final",
+     "datetime": "2022-08-20T21:12",
+     "panel": "HR-HPV Screen, NAAT - Reflex",
+     "specimen": "Cervical cytology (ThinPrep)"
+    },
+    {
+     "id": "l007",
+     "name": "Cholesterol, Total, Ser/Plas",
+     "category": "laboratory",
+     "value": 146,
+     "code": "2093-3",
+     "system": "LOINC",
+     "unit": "mg/dL",
+     "refText": "<200",
+     "flag": null,
+     "status": "final",
+     "datetime": "2022-11-07T23:56",
+     "encounterId": "8200600015",
+     "panel": "Lipid Panel with Direct LDL",
+     "specimen": "Blood"
+    },
+    {
+     "id": "l008",
+     "name": "Cholesterol/HDL Ratio",
+     "category": "laboratory",
+     "value": 2.2,
+     "code": "9830-1",
+     "system": "LOINC",
+     "unit": "ratio",
+     "refText": "<5.0",
+     "flag": null,
+     "status": "final",
+     "datetime": "2022-11-07T23:56",
+     "encounterId": "8200600015",
+     "panel": "Lipid Panel with Direct LDL",
+     "specimen": "Blood"
+    },
+    {
+     "id": "l009",
+     "name": "Direct LDL Chol",
+     "category": "laboratory",
+     "value": 68,
+     "code": "18262-6",
+     "system": "LOINC",
+     "unit": "mg/dL",
+     "refText": "<130",
+     "flag": null,
+     "status": "final",
+     "datetime": "2022-11-07T23:56",
+     "encounterId": "8200600015",
+     "panel": "Lipid Panel with Direct LDL",
+     "specimen": "Blood"
+    },
+    {
+     "id": "l010",
+     "name": "HDL Cholesterol",
+     "category": "laboratory",
+     "value": 65,
+     "code": "2085-9",
+     "system": "LOINC",
+     "unit": "mg/dL",
+     "refText": ">40",
+     "flag": null,
+     "status": "final",
+     "datetime": "2022-11-07T23:56",
+     "encounterId": "8200600015",
+     "panel": "Lipid Panel with Direct LDL",
+     "specimen": "Blood"
+    },
+    {
+     "id": "l011",
+     "name": "Non-HDL Chol, Calc",
+     "category": "laboratory",
+     "value": 81,
+     "code": "43396-1",
+     "system": "LOINC",
+     "unit": "mg/dL",
+     "refText": "<160",
+     "flag": null,
+     "status": "final",
+     "datetime": "2022-11-07T23:56",
+     "encounterId": "8200600015",
+     "panel": "Lipid Panel with Direct LDL",
+     "specimen": "Blood"
+    },
+    {
+     "id": "l012",
+     "name": "TSH",
+     "category": "laboratory",
+     "value": 2.38,
+     "code": "3016-3",
+     "system": "LOINC",
+     "unit": "uIU/mL",
+     "refLow": 0.27,
+     "refHigh": 4.2,
+     "flag": null,
+     "status": "final",
+     "datetime": "2022-11-07T23:56",
+     "encounterId": "8200600015",
+     "panel": "TSH w/ Reflex FT4",
+     "specimen": "Blood"
+    },
+    {
+     "id": "l013",
+     "name": "Triglyceride, Ser/Plas",
+     "category": "laboratory",
+     "value": 102,
+     "code": "2571-8",
+     "system": "LOINC",
+     "unit": "mg/dL",
+     "refText": "<150",
+     "flag": null,
+     "status": "final",
+     "datetime": "2022-11-07T23:56",
+     "encounterId": "8200600015",
+     "panel": "Lipid Panel with Direct LDL",
+     "specimen": "Blood"
+    },
+    {
+     "id": "l014",
+     "name": "25-OH Vitamin D, Total",
+     "category": "laboratory",
+     "value": 30.48,
+     "code": "62292-8",
+     "system": "LOINC",
+     "unit": "ng/mL",
+     "refLow": 25,
+     "refHigh": 80,
+     "flag": null,
+     "status": "final",
+     "datetime": "2022-11-08T03:59",
+     "panel": "Vitamin D, 25-Hydroxy",
+     "specimen": "Blood"
+    },
+    {
+     "id": "l015",
+     "name": "Vitamin B12",
+     "category": "laboratory",
+     "value": 308.24,
+     "code": "2132-9",
+     "system": "LOINC",
+     "unit": "pg/mL",
+     "refLow": 232,
+     "refHigh": 1245,
+     "flag": null,
+     "status": "final",
+     "datetime": "2022-11-08T04:19",
+     "panel": "Vitamin B12",
+     "specimen": "Blood"
+    },
+    {
+     "id": "l016",
+     "name": "Anti-HBC Antibody",
+     "category": "laboratory",
+     "value": "Negative",
+     "flag": null,
+     "status": "final",
+     "datetime": "2022-11-08T05:53",
+     "panel": "Hepatitis B Serology",
+     "specimen": "Blood"
+    },
+    {
+     "id": "l017",
+     "name": "HEP B Surface Antigen",
+     "category": "laboratory",
+     "value": "Negative",
+     "code": "5196-1",
+     "system": "LOINC",
+     "flag": null,
+     "status": "final",
+     "datetime": "2022-11-08T05:53",
+     "panel": "Hepatitis B Serology",
+     "specimen": "Blood"
+    },
+    {
+     "id": "l018",
+     "name": "Hepatitis B Surface Antibody, Qualitative",
+     "category": "laboratory",
+     "value": "Negative",
+     "flag": null,
+     "status": "final",
+     "datetime": "2022-11-08T05:53",
+     "panel": "Hepatitis B Serology",
+     "specimen": "Blood"
+    },
+    {
+     "id": "l019",
+     "name": "Hepatitis B Surface Antibody, Quantitative",
+     "category": "laboratory",
+     "value": "<8.0",
+     "flag": null,
+     "status": "final",
+     "datetime": "2022-11-08T05:53",
+     "panel": "Hepatitis B Serology",
+     "specimen": "Blood"
+    },
+    {
+     "id": "l020",
+     "name": "Interpretation",
+     "category": "laboratory",
+     "value": "Screening for total (IgM and IgG) anti-HBV core antibody is NEGATIVE. This result probably rules out infection with hepatitis B virus (HBV) but testing for HBsAg may also be indicated.",
+     "flag": null,
+     "status": "final",
+     "datetime": "2022-11-08T05:53",
+     "panel": "Hepatitis B Serology",
+     "specimen": "Blood"
+    },
+    {
+     "id": "l021",
+     "name": "Interpretation",
+     "category": "laboratory",
+     "value": "Screening for HBsAg is NEGATIVE. This result may not rule out infection with hepatitis B virus (HBV). If both HBsAg and total anti-HBc antibody are negative, then current HBV infection is unlikely.",
+     "flag": null,
+     "status": "final",
+     "datetime": "2022-11-08T05:53",
+     "panel": "Hepatitis B Serology",
+     "specimen": "Blood"
+    },
+    {
+     "id": "l022",
+     "name": "Interpretation",
+     "category": "laboratory",
+     "value": "Patient is presumed to be not immune to HBV infection.",
+     "flag": null,
+     "status": "final",
+     "datetime": "2022-11-08T05:53",
+     "panel": "Hepatitis B Serology",
+     "specimen": "Blood"
+    },
+    {
+     "id": "v01",
+     "name": "Systolic BP",
+     "category": "vital-signs",
+     "value": 122,
+     "code": "8480-6",
+     "system": "LOINC",
+     "unit": "mmHg",
+     "status": "final",
+     "datetime": "2021-10-13T03:35"
+    },
+    {
+     "id": "v02",
+     "name": "Diastolic BP",
+     "category": "vital-signs",
+     "value": 71,
+     "code": "8462-4",
+     "system": "LOINC",
+     "unit": "mmHg",
+     "status": "final",
+     "datetime": "2021-10-13T03:35"
+    },
+    {
+     "id": "v03",
+     "name": "Temp",
+     "category": "vital-signs",
+     "value": 98.88,
+     "code": "8310-5",
+     "system": "LOINC",
+     "unit": "°F",
+     "status": "final",
+     "datetime": "2021-10-13T03:35"
+    },
+    {
+     "id": "v04",
+     "name": "Systolic BP",
+     "category": "vital-signs",
+     "value": 120,
+     "code": "8480-6",
+     "system": "LOINC",
+     "unit": "mmHg",
+     "status": "final",
+     "datetime": "2021-10-13T05:50"
+    },
+    {
+     "id": "v05",
+     "name": "Diastolic BP",
+     "category": "vital-signs",
+     "value": 79,
+     "code": "8462-4",
+     "system": "LOINC",
+     "unit": "mmHg",
+     "status": "final",
+     "datetime": "2021-10-13T05:50"
+    },
+    {
+     "id": "v06",
+     "name": "Systolic BP",
+     "category": "vital-signs",
+     "value": 119,
+     "code": "8480-6",
+     "system": "LOINC",
+     "unit": "mmHg",
+     "status": "final",
+     "datetime": "2021-10-16T04:09"
+    },
+    {
+     "id": "v07",
+     "name": "Diastolic BP",
+     "category": "vital-signs",
+     "value": 61,
+     "code": "8462-4",
+     "system": "LOINC",
+     "unit": "mmHg",
+     "status": "final",
+     "datetime": "2021-10-16T04:09"
+    },
+    {
+     "id": "v08",
+     "name": "Temp",
+     "category": "vital-signs",
+     "value": 98.93,
+     "code": "8310-5",
+     "system": "LOINC",
+     "unit": "°F",
+     "status": "final",
+     "datetime": "2021-10-16T04:09"
+    },
+    {
+     "id": "v09",
+     "name": "Systolic BP",
+     "category": "vital-signs",
+     "value": 110,
+     "code": "8480-6",
+     "system": "LOINC",
+     "unit": "mmHg",
+     "status": "final",
+     "datetime": "2021-10-16T07:14"
+    },
+    {
+     "id": "v10",
+     "name": "Diastolic BP",
+     "category": "vital-signs",
+     "value": 78,
+     "code": "8462-4",
+     "system": "LOINC",
+     "unit": "mmHg",
+     "status": "final",
+     "datetime": "2021-10-16T07:14"
+    },
+    {
+     "id": "v11",
+     "name": "Temp",
+     "category": "vital-signs",
+     "value": 98.74,
+     "code": "8310-5",
+     "system": "LOINC",
+     "unit": "°F",
+     "status": "final",
+     "datetime": "2021-10-16T07:14"
+    },
+    {
+     "id": "v12",
+     "name": "Systolic BP",
+     "category": "vital-signs",
+     "value": 120,
+     "code": "8480-6",
+     "system": "LOINC",
+     "unit": "mmHg",
+     "status": "final",
+     "datetime": "2021-11-13T00:26"
+    },
+    {
+     "id": "v13",
+     "name": "Diastolic BP",
+     "category": "vital-signs",
+     "value": 64,
+     "code": "8462-4",
+     "system": "LOINC",
+     "unit": "mmHg",
+     "status": "final",
+     "datetime": "2021-11-13T00:26"
+    },
+    {
+     "id": "v14",
+     "name": "Temp",
+     "category": "vital-signs",
+     "value": 98.76,
+     "code": "8310-5",
+     "system": "LOINC",
+     "unit": "°F",
+     "status": "final",
+     "datetime": "2021-11-13T00:26"
+    },
+    {
+     "id": "v15",
+     "name": "Systolic BP",
+     "category": "vital-signs",
+     "value": 148,
+     "code": "8480-6",
+     "system": "LOINC",
+     "unit": "mmHg",
+     "flag": "H",
+     "status": "final",
+     "datetime": "2021-11-14T18:01"
+    },
+    {
+     "id": "v16",
+     "name": "Diastolic BP",
+     "category": "vital-signs",
+     "value": 69,
+     "code": "8462-4",
+     "system": "LOINC",
+     "unit": "mmHg",
+     "status": "final",
+     "datetime": "2021-11-14T18:01"
+    },
+    {
+     "id": "v17",
+     "name": "Temp",
+     "category": "vital-signs",
+     "value": 97.1,
+     "code": "8310-5",
+     "system": "LOINC",
+     "unit": "°F",
+     "status": "final",
+     "datetime": "2021-11-14T18:01"
+    },
+    {
+     "id": "v18",
+     "name": "Systolic BP",
+     "category": "vital-signs",
+     "value": 147,
+     "code": "8480-6",
+     "system": "LOINC",
+     "unit": "mmHg",
+     "flag": "H",
+     "status": "final",
+     "datetime": "2021-11-14T20:07"
+    },
+    {
+     "id": "v19",
+     "name": "Diastolic BP",
+     "category": "vital-signs",
+     "value": 67,
+     "code": "8462-4",
+     "system": "LOINC",
+     "unit": "mmHg",
+     "status": "final",
+     "datetime": "2021-11-14T20:07"
+    },
+    {
+     "id": "v20",
+     "name": "Systolic BP",
+     "category": "vital-signs",
+     "value": 120,
+     "code": "8480-6",
+     "system": "LOINC",
+     "unit": "mmHg",
+     "status": "final",
+     "datetime": "2022-03-13T16:45"
+    },
+    {
+     "id": "v21",
+     "name": "Diastolic BP",
+     "category": "vital-signs",
+     "value": 56,
+     "code": "8462-4",
+     "system": "LOINC",
+     "unit": "mmHg",
+     "status": "final",
+     "datetime": "2022-03-13T16:45"
+    },
+    {
+     "id": "v22",
+     "name": "Temp",
+     "category": "vital-signs",
+     "value": 98.86,
+     "code": "8310-5",
+     "system": "LOINC",
+     "unit": "°F",
+     "status": "final",
+     "datetime": "2022-03-13T16:45"
+    },
+    {
+     "id": "v23",
+     "name": "Systolic BP",
+     "category": "vital-signs",
+     "value": 111,
+     "code": "8480-6",
+     "system": "LOINC",
+     "unit": "mmHg",
+     "status": "final",
+     "datetime": "2022-08-15T20:02",
+     "encounterId": "8200600005"
+    },
+    {
+     "id": "v24",
+     "name": "Diastolic BP",
+     "category": "vital-signs",
+     "value": 64,
+     "code": "8462-4",
+     "system": "LOINC",
+     "unit": "mmHg",
+     "status": "final",
+     "datetime": "2022-08-15T20:02",
+     "encounterId": "8200600005"
+    },
+    {
+     "id": "v25",
+     "name": "Pulse",
+     "category": "vital-signs",
+     "value": 50,
+     "code": "8867-4",
+     "system": "LOINC",
+     "unit": "bpm",
+     "refLow": 60,
+     "refHigh": 100,
+     "flag": "L",
+     "status": "final",
+     "datetime": "2022-08-15T20:02",
+     "encounterId": "8200600005"
+    },
+    {
+     "id": "v26",
+     "name": "Height",
+     "category": "vital-signs",
+     "value": 179.1,
+     "code": "8302-2",
+     "system": "LOINC",
+     "unit": "cm",
+     "status": "final",
+     "datetime": "2022-08-15T20:02",
+     "encounterId": "8200600005"
+    },
+    {
+     "id": "v27",
+     "name": "Weight",
+     "category": "vital-signs",
+     "value": 68.7,
+     "code": "29463-7",
+     "system": "LOINC",
+     "unit": "kg",
+     "status": "final",
+     "datetime": "2022-08-15T20:02",
+     "encounterId": "8200600005"
+    },
+    {
+     "id": "v28",
+     "name": "SpO2",
+     "category": "vital-signs",
+     "value": 100,
+     "code": "2708-6",
+     "system": "LOINC",
+     "unit": "%",
+     "refLow": 95,
+     "status": "final",
+     "datetime": "2022-08-15T20:02",
+     "encounterId": "8200600005"
+    },
+    {
+     "id": "v29",
+     "name": "BMI",
+     "category": "vital-signs",
+     "value": 21.42,
+     "code": "39156-5",
+     "system": "LOINC",
+     "unit": "kg/m²",
+     "refLow": 18.5,
+     "refHigh": 24.9,
+     "status": "final",
+     "datetime": "2022-08-15T20:02",
+     "encounterId": "8200600005"
+    },
+    {
+     "id": "s01",
+     "name": "Tobacco Use",
+     "code": "72166-2",
+     "system": "LOINC",
+     "category": "social-history",
+     "value": "Never",
+     "status": "final",
+     "datetime": "2022-08-15T09:00",
+     "panel": "Social History"
+    },
+    {
+     "id": "s02",
+     "name": "Alcohol Use",
+     "code": "74013-4",
+     "system": "LOINC",
+     "category": "social-history",
+     "value": "Never",
+     "status": "final",
+     "datetime": "2022-08-15T09:00",
+     "panel": "Social History"
+    },
+    {
+     "id": "l_travel_hgb",
+     "name": "Hemoglobin",
+     "category": "laboratory",
+     "value": 13.2,
+     "code": "718-7",
+     "system": "LOINC",
+     "unit": "g/dL",
+     "flag": null,
+     "status": "final",
+     "datetime": "2023-04-10T08:00",
+     "panel": "CBC with Differential",
+     "specimen": "Blood",
+     "encounterId": "8200600022"
+    },
+    {
+     "id": "l_travel_wbc",
+     "name": "White Blood Cell Count",
+     "category": "laboratory",
+     "value": 6.2,
+     "code": "6690-2",
+     "system": "LOINC",
+     "unit": "10*3/uL",
+     "flag": null,
+     "status": "final",
+     "datetime": "2023-04-10T08:00",
+     "panel": "CBC with Differential",
+     "specimen": "Blood",
+     "encounterId": "8200600022"
+    },
+    {
+     "id": "l_travel_plt",
+     "name": "Platelet Count",
+     "category": "laboratory",
+     "value": 244,
+     "code": "777-3",
+     "system": "LOINC",
+     "unit": "10*3/uL",
+     "flag": null,
+     "status": "final",
+     "datetime": "2023-04-10T08:00",
+     "panel": "CBC with Differential",
+     "specimen": "Blood",
+     "encounterId": "8200600022"
+    },
+    {
+     "id": "l_travel_cr",
+     "name": "Creatinine",
+     "category": "laboratory",
+     "value": 0.78,
+     "code": "2160-0",
+     "system": "LOINC",
+     "unit": "mg/dL",
+     "flag": null,
+     "status": "final",
+     "datetime": "2023-04-10T08:00",
+     "panel": "Creatinine, Serum",
+     "specimen": "Blood",
+     "encounterId": "8200600022"
+    }
+   ],
+   "notes": [
+    {
+     "id": "n1",
+     "type": "Progress Note",
+     "author": "Alvarez, Dana, MD",
+     "credentials": "MD",
+     "datetime": "2023-04-09T23:38",
+     "encounterId": "8200600020",
+     "status": "signed",
+     "text": "Established patient video visit for anticoagulation guidance and preventive care\n\nThe patient's identity and in-state residence were verified. The risks, benefits, and limitations of telehealth were reviewed; the patient understood and agreed to proceed.\n\nHistory of present illness:\n- The patient is a 32-year-old woman with a heterozygous prothrombin (Factor II) gene mutation.\n- History of deep vein thrombosis in 2006 following a knee injury; treated with once-daily certoparin injections for 6 months with follow-up every 2 months during that period.\n- Since then, has used certoparin-natrium 3,000 anti-Xa units (0.3 mL) injections for long-haul flights and for immobilizing illness (bed rest ≥1 day). Requests a new prescription.\n- Plans to use the last two injections for a long-distance flight to the east coast this week. Reports frequent long-distance travel for work, with an international trip planned for mid April and four additional international flights in June.\n- Provided an emergency card, a specialist report in German, and images of the medication (translations not available).\n- Family history: both grandfathers had multiple DVTs; grandmother is likely a carrier; a cousin has the same mutation.\n- Preferred pharmacy: a local retail pharmacy.\n\nPreventive care:\n- Nutrition: vegan; supplements vitamin B12 (1,000 mcg), magnesium, and vitamin D.\n- Physical activity: not specified.\n- BMI: 21.\n- Immunizations: Tdap in 2015 (patient will provide documentation); COVID booster due.\n- Cervical screening: normal cytology and negative HPV on 08/20/2022.\n- Hepatitis C screening: negative in 2021.\n- Hepatitis B screening: negative in 2022.\n- Prior labs on 11/07/2022 showed borderline low vitamin B12; methylmalonic acid testing was ordered; CBC and chemistry were obtained.\n\nPast medical history:\n- Right tibial fracture\n- Concussion\n- Acute DVT of lower extremity\n- Environmental allergies\n- History of finger fracture\n- Hypothyroidism\n- Peritonitis\n- Prothrombin mutation (heterozygous)\n\nSocial history:\n- Marital status: single\n- Tobacco: never\n- Alcohol: never\n- Drugs: never\n- Sexual activity: yes; male partners; uses condoms\n- Social narrative: from abroad; postdoctoral researcher in physics at a university\n\nGynecologic/obstetric history:\n- No obstetric history on file\n\nMedications:\n- Cholecalciferol (vitamin D3): by mouth\n- Cyanocobalamin (vitamin B12): by mouth\n- Levothyroxine 25 mcg: 1 tablet by mouth each morning before breakfast\n- Magnesium: by mouth\n- Ofloxacin 0.3% ophthalmic solution: 1 drop in the right eye four times daily\n\nAllergies:\n- No known drug allergies\n\nTelemedicine-focused examination:\n- General: well-appearing, no acute distress, cooperative\n- HEENT: extraocular movements intact; conjunctivae clear\n- Respiratory: speaking comfortably in full sentences; no visible tachypnea\n- Neurologic: alert and oriented; cranial nerves grossly intact; moves upper extremities appropriately\n- Skin: normal appearance\n- Psychiatric: appropriate affect; coherent thought and speech\n\nPertinent data reviewed:\n- No results within the last 3 months.\n- Most recent available labs from the appointment on 11/07/2022:\n  - TSH: 2.38 uIU/mL (0.27-4.20)\n  - Lipid panel: Total cholesterol 146 mg/dL; Triglycerides 102 mg/dL; HDL 65 mg/dL; Direct LDL 68 mg/dL; Cholesterol/HDL ratio 2.2; Non-HDL cholesterol 81 mg/dL\n  - Hepatitis B: HBsAg negative; anti-HBs quantitative <8.0 mIU/mL; anti-HBs qualitative negative; anti-HBc total negative; interpretation: not immune to HBV\n  - Vitamin B12: 308.24 pg/mL (232-1,245)\n  - 25-OH Vitamin D (total): 30.48 ng/mL (25-80)\n\nOrders placed:\n- E-consult to Hematology\n- Comprehensive metabolic panel\n- Complete blood count with differential\n- Vitamin B12 level\n- Methylmalonic acid"
+    },
+    {
+     "id": "n2",
+     "type": "Telephone Encounter",
+     "author": "Okoye, Marisol, RN",
+     "credentials": "RN",
+     "datetime": "2022-09-30T18:25",
+     "encounterId": "8200600014",
+     "status": "signed",
+     "text": "The patient expresses appreciation for the prescription and the laboratory order and requests adding Holo-TC (active B12) and vitamin D tests. Because the patient follows a vegan diet, these markers were routinely monitored during prior care abroad. The patient asks whether the current blood work constitutes a comprehensive screening panel for a routine check-up. Ongoing symptoms include circulatory complaints with dizziness and fatigue, as documented at the previous visit, and these have not been checked for one year. Orders for B12 and vitamin D are pending; the message has been routed to the attending. The patient asks if it is acceptable to complete the tests in the second week of October, noting travel tomorrow and uncertainty about availability tomorrow morning."
+    },
+    {
+     "id": "n3",
+     "type": "Telephone Encounter",
+     "author": "Okoye, Marisol, RN",
+     "credentials": "RN",
+     "datetime": "2022-09-26T22:48",
+     "encounterId": "8200600011",
+     "status": "signed",
+     "text": "Internal communication dated 09/26/2022 PDT: The patient requests a refill for thyroid hormone replacement “Eferox 25” (levothyroxine 0,024 mg per tablet) for treatment of hypothyroidism. Please confirm whether it is acceptable to transmit the prescription to the pharmacy. The order could not be pended because this specific strength does not appear in the electronic health record formulary.\n\nMessage dated 09/26/2022 PDT: Confirmation received that the listed pharmacy is correct.\n\nMessage dated 09/26/2022 NW: The clinic can route the refill request to the attending for review. Please confirm the preferred pharmacy for pickup.\n\nHealth maintenance items due:\n- Hepatitis B screening discussion: Never done\n- Tdap (DTaP/Tdap/Td) immunization (1 dose of Tdap): Never done\n- Influenza vaccine (1): Never done\n\nReminder: For urgent concerns, contact the clinic at any time. Same-day appointments may be scheduled through the patient portal with primary care or the express care clinic. Express care hours: 9am–9pm, 7 days per week.\n\nMessage dated 09/26/2022 PDT from the patient to the attending: As discussed previously, the patient takes “Eferox 25” (levothyroxine 0,024 mg per tablet) for an underactive thyroid. The supply obtained from Germany is nearly depleted. The patient moved to the United States approximately one year ago and requests a prescription renewal to obtain the medication domestically."
+    },
+    {
+     "id": "n4",
+     "type": "Progress Note",
+     "author": "Alvarez, Dana, MD",
+     "credentials": "MD",
+     "datetime": "2022-08-15T20:00",
+     "encounterId": "8200600005",
+     "status": "signed",
+     "text": "Established patient visit for preventive care. Chief concern: cervical cancer screening.\n\nHistory of present illness:\n- Cervical cancer screening: The patient, a 31-year-old female, requests cervical cytology today. Last Pap on 03/25/2022 was reported normal, performed abroad, and records are not available. Denies dyspareunia, dysuria, abnormal vaginal bleeding, or abnormal discharge. Last menstrual period was 07/15/2022 (approximate).\n- Dizziness: Reports lifelong lightheadedness when standing quickly, with worsening over the past 5–6 weeks possibly related to extensive travel. Uses strategies such as rising slowly and sitting when symptoms begin. Denies syncope or loss of consciousness, diaphoresis or nausea, chest pain, or palpitations. The patient has a primary care clinician.\n\nReview of systems:\n- Pertinent positives and negatives as detailed in the HPI; otherwise negative.\n\nPast, family, and social history:\n- Reviewed and updated as appropriate.\n\nMedications (outpatient):\n- Cholecalciferol (vitamin D3), oral.\n- Cyanocobalamin (vitamin B-12), oral.\n- Levothyroxine 25 mcg tablet, 25 mcg orally every morning before breakfast.\n- Magnesium, oral.\n- Ofloxacin 0.3% ophthalmic solution, instill 1 drop in the right eye four times daily.\n- No facility-administered medications during this visit.\n\nAllergies:\n- No known drug allergies.\n\nVital signs:\n- Blood pressure 111/64 (right arm, sitting).\n- Pulse 50.\n- Height 1.791 m (5' 10.51\").\n- Weight 68.7 kg (151 lb 7.3 oz).\n- LMP 07/15/2022 (Approximate).\n- SpO2 100%.\n- BMI 21.42 kg/m².\n\nPhysical examination:\n- General: Well-developed, well-nourished; no acute distress.\n- HEENT: Conjunctivae normal; no lid ptosis noted.\n- Respiratory: Normal effort.\n- Cardiovascular: Regular rate and rhythm; no murmurs, rubs, or gallops; no peripheral edema.\n- Genitourinary (female): External genitalia without erythema or lesions; vaginal mucosa pink; cervix appears normal without discharge; cervical cytology sample obtained.\n- Skin: Normal turgor and temperature.\n- Musculoskeletal: Normal gait and station; no digital clubbing, cyanosis, or ischemia.\n- Psychiatric: Alert and oriented to person, place, and time; appropriate affect.\n\nData reviewed:\n- Relevant information reviewed and discussed with the patient.\n\nAssessment and plan:\n- Preventive health care: 31-year-old female presenting for cervical cancer screening. Reviewed guideline-based screening. Pap smear with HPV co-testing obtained today. Will follow up when results are available. All questions addressed; the patient agrees with the plan.\n- Lightheadedness: No concerning findings on exam; blood pressure 111/64 today. Suspect orthostatic hypotension/orthostatic intolerance, likely exacerbated by dehydration in the context of recent travel and low fluid intake. Advised increased hydration and gradual position changes. Monitor for progression; return if symptoms worsen. The patient understands and agrees.\n\nHealth maintenance due:\n- Hepatitis B screening discussion: Never done.\n- DTaP/Tdap/Td immunizations (1 - Tdap): Never done.\n- Pap smear: Never done.\n\nPHQ-9:\n- PHQ-9 08/14/2022 11/11/2021\n  1. Little interest or pleasure in doing things: 0 - Not at all; 0 - Not at all\n  2. Feeling down, depressed, or hopeless: 0 - Not at all; 0 - Not at all\n\nTime spent:\n- A total of 21 minutes was spent on both face-to-face and non-face-to-face care, including preparation, review of prior notes and tests, history-taking, examination, counseling and education, ordering tests/procedures as indicated, and documentation in the electronic record."
+    },
+    {
+     "id": "n5",
+     "type": "Clinic Support Note",
+     "author": "Okoye, Marisol, RN",
+     "credentials": "RN",
+     "datetime": "2022-08-15T20:00",
+     "encounterId": "8200600005",
+     "status": "signed",
+     "text": "Preventive care gaps:\n- Hepatitis B screening counseling has not been completed.\n- Adult Tdap booster (first Tdap) remains due.\n- Cervical cancer screening with Pap test has not been performed.\n\nDepression screening (PHQ-9):\n- Assessments dated 08/14/2022 and 11/11/2021 show the following responses on both dates:\n  - Item 1 (loss of interest or pleasure): 0, Not at all.\n  - Item 2 (feeling down, depressed, or hopeless): 0, Not at all."
+    },
+    {
+     "id": "n6",
+     "type": "Pathology Result",
+     "author": "Cytopathology, Laboratory",
+     "credentials": "MD",
+     "datetime": "2022-08-15T07:00",
+     "encounterId": "8200600005",
+     "status": "signed",
+     "text": "Specimen obtained from the cervical/vaginal area; ThinPrep Pap used for routine cervical cancer screening. Last menstrual period: 07/15/2022.\n\nCytologic interpretation: No intraepithelial lesion or malignancy detected.\n\nSpecimen adequacy: Satisfactory for assessment; transformation zone component not identified.\n\nComments: Requested HPV, Bamberg/Chlamydia, and/or Trichomonas testing has been ordered and will be performed by the virology laboratory. Results will be reported separately in the electronic medical record.\n\nElectronically signed on 08/21/2022."
+    },
+    {
+     "id": "n7",
+     "type": "Telephone Encounter",
+     "author": "Okoye, Marisol, RN",
+     "credentials": "RN",
+     "datetime": "2023-04-10T09:00",
+     "encounterId": "8200600022",
+     "status": "signed",
+     "text": "Pre-travel medication and safety reconciliation\n\nPatient confirms no current unilateral leg pain or swelling, chest pain, unexplained dyspnea, hemoptysis, syncope or other new concern for an acute clot. Reports no active or recent bleeding, easy bruising, known bleeding disorder, prior heparin-induced thrombocytopenia or heparin allergy. No pregnancy or postpartum state; uses condoms and reports no current pregnancy possibility. No estrogen-containing medication. No recent surgery, hospitalization or current immobility.\n\nRegular medicines reviewed: levothyroxine 25 mcg each morning, vitamin B12, vitamin D and magnesium. Ophthalmic antibiotic course completed. No daily anticoagulant, aspirin, other antiplatelet drug or regular NSAID. Has used intermittent certoparin for flights as described in the prior note; no other anticoagulant use.\n\nPatient reports her weight as about 68 kg (last measured 68.7 kg on 08/15/2022); no measurement today. CBC and creatinine are available in the chart from this morning. Patient is comfortable giving injections based on prior experience. She is open to discussing the benefits, risks and practicalities of the available travel-prevention approaches and has not selected a plan for this trip."
+    },
+    {
+     "id": "n8",
+     "type": "Patient Message",
+     "author": "Brandt, Annika",
+     "credentials": "Patient",
+     "datetime": "2023-04-10T10:00",
+     "encounterId": "8200600023",
+     "status": "received",
+     "text": "I'm running out of the injections I use for long flights. Can you review my prescription before my upcoming international travel? My outbound nonstop flight is April 14 and lasts 12 hours. The return nonstop flight is April 28 and lasts 11 hours. Those are the only flights on this trip. I can discuss the plan by phone or portal before I leave."
+    }
+   ],
+   "orderHistory": [
+    {
+     "id": "oh01",
+     "date": "2022-11-10",
+     "type": "Lab",
+     "name": "METHYLMALONIC ACID, SERUM",
+     "cpt": "LABMMAS",
+     "status": "completed"
+    },
+    {
+     "id": "oh02",
+     "date": "2022-11-07",
+     "type": "Lab",
+     "name": "HBSAG",
+     "cpt": "LABHBSAG",
+     "status": "completed"
+    },
+    {
+     "id": "oh03",
+     "date": "2022-11-07",
+     "type": "Lab",
+     "name": "HEP B SURF AB QUANT",
+     "cpt": "LABHBSQT",
+     "status": "completed"
+    },
+    {
+     "id": "oh04",
+     "date": "2022-11-07",
+     "type": "Lab",
+     "name": "HEPATITIS B CORE TOTAL ANTIBODY",
+     "cpt": "LABHBCT",
+     "status": "completed"
+    },
+    {
+     "id": "oh05",
+     "date": "2022-11-07",
+     "type": "Lab",
+     "name": "LIPID PANEL WITH DIRECT LDL",
+     "cpt": "LABLPD",
+     "status": "completed"
+    },
+    {
+     "id": "oh06",
+     "date": "2022-11-07",
+     "type": "Lab",
+     "name": "TSH W/ REFLEX FT4",
+     "cpt": "LABTSHFT4",
+     "status": "completed"
+    },
+    {
+     "id": "oh07",
+     "date": "2022-11-07",
+     "type": "Lab",
+     "name": "VITAMIN B12",
+     "cpt": "LABB12",
+     "status": "completed"
+    },
+    {
+     "id": "oh08",
+     "date": "2022-11-07",
+     "type": "Lab",
+     "name": "VITAMIN D, 25-HYDROXYVITAMIN",
+     "cpt": "LABVD25H",
+     "status": "completed"
+    },
+    {
+     "id": "oh09",
+     "date": "2022-09-30",
+     "type": "Lab",
+     "name": "VITAMIN B12",
+     "cpt": "LABB12",
+     "status": "completed"
+    },
+    {
+     "id": "oh10",
+     "date": "2022-09-30",
+     "type": "Lab",
+     "name": "VITAMIN D, 25-HYDROXYVITAMIN",
+     "cpt": "LABVD25H",
+     "status": "completed"
+    },
+    {
+     "id": "oh11",
+     "date": "2022-09-27",
+     "type": "Lab",
+     "name": "CBC W/O DIFF",
+     "cpt": "LABCBCO",
+     "status": "completed"
+    },
+    {
+     "id": "oh12",
+     "date": "2022-09-27",
+     "type": "Lab",
+     "name": "HBSAG",
+     "cpt": "LABHBSAG",
+     "status": "completed"
+    },
+    {
+     "id": "oh13",
+     "date": "2022-09-27",
+     "type": "Lab",
+     "name": "HEP B SURF AB QUANT",
+     "cpt": "LABHBSQT",
+     "status": "completed"
+    },
+    {
+     "id": "oh14",
+     "date": "2022-09-27",
+     "type": "Lab",
+     "name": "HEPATITIS B CORE TOTAL ANTIBODY",
+     "cpt": "LABHBCT",
+     "status": "completed"
+    },
+    {
+     "id": "oh15",
+     "date": "2022-09-27",
+     "type": "Lab",
+     "name": "LIPID PANEL WITH DIRECT LDL",
+     "cpt": "LABLPD",
+     "status": "completed"
+    },
+    {
+     "id": "oh16",
+     "date": "2022-09-27",
+     "type": "Lab",
+     "name": "METABOLIC PANEL, COMPREHENSIVE",
+     "cpt": "LABMETC",
+     "status": "completed"
+    },
+    {
+     "id": "oh17",
+     "date": "2022-09-27",
+     "type": "Lab",
+     "name": "TSH W/ REFLEX FT4",
+     "cpt": "LABTSHFT4",
+     "status": "completed"
+    },
+    {
+     "id": "oh18",
+     "date": "2022-09-17",
+     "type": "Immunization/Injection",
+     "name": "FLU VACCINE QUAD PRESERVATIVE-FREE IM",
+     "cpt": "90686",
+     "status": "completed"
+    },
+    {
+     "id": "oh19",
+     "date": "2022-08-18",
+     "type": "Lab",
+     "name": "HR-HPV SCREEN, NAAT - REFLEX",
+     "cpt": "LABHPVHRX",
+     "status": "completed"
+    },
+    {
+     "id": "oh20",
+     "date": "2022-08-18",
+     "type": "Pathology",
+     "name": "PWP CONVERSION INTERNAL RESULTS",
+     "cpt": "PATHCONVINT",
+     "status": "completed"
+    },
+    {
+     "id": "oh21",
+     "date": "2022-08-15",
+     "type": "Pathology",
+     "name": "GYN CYTOLOGY - PAP TEST",
+     "cpt": "PATH1",
+     "status": "completed"
+    },
+    {
+     "id": "oh22",
+     "date": "2022-03-13",
+     "type": "PR Charge",
+     "name": "EVAL/MGMT OF NEW PATIENT LEVEL 5",
+     "cpt": "99205",
+     "status": "completed"
+    },
+    {
+     "id": "oh23",
+     "date": "2022-03-13",
+     "type": "PR Charge",
+     "name": "RADEX FOOT COMPL MINIMUM 3 VIEWS",
+     "cpt": "73630",
+     "status": "completed"
+    },
+    {
+     "id": "oh24",
+     "date": "2022-03-13",
+     "type": "Outpatient Referral",
+     "name": "REFERRAL TO PODIATRY",
+     "cpt": "REF292",
+     "status": "completed"
+    },
+    {
+     "id": "oh25",
+     "date": "2022-03-13",
+     "type": "Imaging",
+     "name": "XR FOOT 3 VIEWS RIGHT",
+     "cpt": "IMGXR0056",
+     "status": "completed"
+    },
+    {
+     "id": "oh26",
+     "date": "2022-03-10",
+     "type": "Procedures",
+     "name": "POPULATION HEALTH PROTOCOL AUTHORIZATION",
+     "cpt": "445875",
+     "status": "completed"
+    },
+    {
+     "id": "oh27",
+     "date": "2022-01-29",
+     "type": "Immunization/Injection",
+     "name": "COVID-19 VACCINE PROTOCOL",
+     "cpt": "COVIDVACCINE",
+     "status": "completed"
+    },
+    {
+     "id": "oh28",
+     "date": "2021-12-04",
+     "type": "PR Charge",
+     "name": "COMPRE AUDIOMTRY THRESHOLD EVAL SP RECOGNIJ",
+     "cpt": "92557",
+     "status": "completed"
+    },
+    {
+     "id": "oh29",
+     "date": "2021-12-04",
+     "type": "PR Charge",
+     "name": "EVOKED OTOACOUS EMIJS COMPRE/DX EVAL",
+     "cpt": "92588",
+     "status": "completed"
+    },
+    {
+     "id": "oh30",
+     "date": "2021-12-04",
+     "type": "PR Charge",
+     "name": "PURE TONE AUDIOMTRY AIR&B1",
+     "cpt": "92553",
+     "status": "completed"
+    },
+    {
+     "id": "oh31",
+     "date": "2021-12-04",
+     "type": "PR Charge",
+     "name": "SP AUDIOMTRY THRESHOLD",
+     "cpt": "92555",
+     "status": "completed"
+    },
+    {
+     "id": "oh32",
+     "date": "2021-12-04",
+     "type": "PR Charge",
+     "name": "TYMPANOMETRY",
+     "cpt": "92567",
+     "status": "completed"
+    },
+    {
+     "id": "oh33",
+     "date": "2021-12-04",
+     "type": "PR Charge",
+     "name": "TYMPANOMETRY & REFLEX THRESH",
+     "cpt": "92550",
+     "status": "completed"
+    },
+    {
+     "id": "oh34",
+     "date": "2021-12-04",
+     "type": "PR Charge",
+     "name": "VIS RNFCMT AUDIOMTRY",
+     "cpt": "92579",
+     "status": "completed"
+    },
+    {
+     "id": "oh35",
+     "date": "2021-11-28",
+     "type": "Outpatient Referral",
+     "name": "REFERRAL TO EYE",
+     "cpt": "REF50",
+     "status": "completed"
+    },
+    {
+     "id": "oh36",
+     "date": "2021-11-14",
+     "type": "Procedures",
+     "name": "FOREIGN BODY REMOVAL",
+     "cpt": "2109362",
+     "status": "completed"
+    },
+    {
+     "id": "oh37",
+     "date": "2021-11-14",
+     "type": "Procedures",
+     "name": "Foreign body",
+     "cpt": "2109362",
+     "status": "completed"
+    },
+    {
+     "id": "oh38",
+     "date": "2021-11-14",
+     "type": "Nursing",
+     "name": "VISUAL ACUITY TEST",
+     "cpt": "NUR300095",
+     "status": "completed"
+    },
+    {
+     "id": "oh39",
+     "date": "2021-10-17",
+     "type": "PR Charge",
+     "name": "EVAL/MGMT OF NEW PATIENT LEVEL 5",
+     "cpt": "99205",
+     "status": "completed"
+    },
+    {
+     "id": "oh40",
+     "date": "2021-10-17",
+     "type": "Outpatient Referral",
+     "name": "REFERRAL TO AUDIOLOGY",
+     "cpt": "REF77",
+     "status": "completed"
+    },
+    {
+     "id": "oh41",
+     "date": "2021-10-17",
+     "type": "Procedures",
+     "name": "UHA PROC AUDIOLOGY - SCANNED",
+     "cpt": "2500147415",
+     "status": "completed"
+    },
+    {
+     "id": "oh42",
+     "date": "2021-10-16",
+     "type": "PR Charge",
+     "name": "ACOUS RFLX THRESHOLD",
+     "cpt": "92568",
+     "status": "completed"
+    },
+    {
+     "id": "oh43",
+     "date": "2021-10-16",
+     "type": "PR Charge",
+     "name": "COMPRE AUDIOMTRY THRESHOLD EVAL SP RECOGNIJ",
+     "cpt": "92557",
+     "status": "completed"
+    },
+    {
+     "id": "oh44",
+     "date": "2021-10-16",
+     "type": "PR Charge",
+     "name": "TYMPANOMETRY",
+     "cpt": "92567",
+     "status": "completed"
+    },
+    {
+     "id": "oh45",
+     "date": "2021-10-15",
+     "type": "Outpatient Referral",
+     "name": "ED DISCHARGE REFERRAL ORDER",
+     "cpt": "2100000100",
+     "status": "completed"
+    },
+    {
+     "id": "oh46",
+     "date": "2021-10-13",
+     "type": "Nursing",
+     "name": "IRRIGATE/CLEANSE WOUND",
+     "cpt": "NUR631",
+     "status": "completed"
+    },
+    {
+     "id": "oh47",
+     "date": "2021-10-12",
+     "type": "Procedures",
+     "name": "LACERATION REPAIR",
+     "cpt": "2109372",
+     "status": "completed"
+    },
+    {
+     "id": "oh48",
+     "date": "2021-10-12",
+     "type": "Procedures",
+     "name": "Laceration",
+     "cpt": "2109372",
+     "status": "completed"
+    },
+    {
+     "id": "oh49",
+     "date": "2023-04-09",
+     "type": "Outpatient Referral",
+     "name": "E-CONSULT TO HEMATOLOGY",
+     "cpt": null,
+     "status": "active"
+    },
+    {
+     "id": "oh50",
+     "date": "2023-04-09",
+     "type": "Lab",
+     "name": "METABOLIC PANEL, COMPREHENSIVE",
+     "cpt": null,
+     "status": "active"
+    },
+    {
+     "id": "oh51",
+     "date": "2023-04-09",
+     "type": "Lab",
+     "name": "CBC W/ DIFFERENTIAL",
+     "cpt": null,
+     "status": "active"
+    },
+    {
+     "id": "oh52",
+     "date": "2023-04-09",
+     "type": "Lab",
+     "name": "VITAMIN B12",
+     "cpt": null,
+     "status": "active"
+    },
+    {
+     "id": "oh53",
+     "date": "2023-04-09",
+     "type": "Lab",
+     "name": "METHYLMALONIC ACID, SERUM",
+     "cpt": null,
+     "status": "active"
+    }
+   ],
+   "advisories": [
+    {
+     "kind": null,
+     "sev": "info",
+     "text": "<b>Hematology e-consult</b> — anticoagulation guidance requested by primary care (04/09/2023)"
+    },
+    {
+     "kind": null,
+     "sev": "info",
+     "text": "<b>Prescription request</b> — patient requests a new supply of an injectable medication obtained overseas; the product strength is not in the formulary"
+    }
+   ],
+   "healthMaintenance": [
+    {
+     "name": "Cervical Cancer Screening (Pap test)",
+     "status": "done",
+     "detail": "08/15/2022"
+    },
+    {
+     "name": "HR-HPV Co-test",
+     "status": "done",
+     "detail": "08/20/2022 — negative"
+    },
+    {
+     "name": "Hepatitis B Screening",
+     "status": "done",
+     "detail": "11/07/2022 — not immune"
+    },
+    {
+     "name": "Hepatitis C Screening",
+     "status": "done",
+     "detail": "11/13/2021 — negative"
+    },
+    {
+     "name": "Influenza Vaccine",
+     "status": "done",
+     "detail": "09/17/2022"
+    },
+    {
+     "name": "COVID-19 Vaccine",
+     "status": "due",
+     "detail": "Primary series 01/29/2022; booster due"
+    },
+    {
+     "name": "Tdap Vaccine",
+     "status": "due",
+     "detail": "Reported 2015 abroad; documentation pending"
+    }
+   ],
+   "recentActivity": [
+    "New patient message (04/10/2023) — prescription review before an international trip (flights April 14 and April 28)",
+    "Telephone encounter (04/10/2023) — pre-travel medication and safety reconciliation (RN)",
+    "Laboratory results (04/10/2023) — CBC and creatinine resulted",
+    "Video visit 04/09/2023 — anticoagulation guidance and preventive care; hematology e-consult placed",
+    "Refill encounter 01/09/2023 — thyroid hormone replacement",
+    "Orders-only visit 11/10/2022 — methylmalonic acid added after the 11/07/2022 laboratory draw",
+    "Laboratory draw 11/07/2022 — lipid panel, TSH, vitamin B12, vitamin D and hepatitis B serology"
+   ]
+  },
+  "activity": "chart-review",
+  "crSubtab": "Notes/Trans",
+  "orders": [],
+  "deliverable": "04/10/2023 - Portal message: travel thromboprophylaxis prescription review\n\nReviewed patient's message, 04/10 RN medication/safety review, 04/09 telemedicine note and existing hematology e-consult request, medication/allergy list, and 04/10 CBC/creatinine. Asynchronous review; no examination performed.\n\nHistory: Heterozygous prothrombin (factor II) mutation; single reported provoked DVT in 2006 after knee injury, treated with certoparin for 6 months, without documented recurrence. Strong family history of VTE/thrombophilia. Uses overseas certoparin-natrium 3,000 anti-Xa IU/0.3 mL intermittently for long flights and bed rest/illness, not continuous anticoagulation. Confirmed itinerary: only a 12-hour nonstop flight April 14 and an 11-hour nonstop return April 28. Comfortable with injections but has not selected a final prevention plan.\n\nPer RN review: no current leg swelling/pain, chest pain, dyspnea, hemoptysis or syncope; no active/recent bleeding, easy bruising, known bleeding disorder, prior HIT or heparin allergy. No reported pregnancy/recent postpartum status, estrogen use, recent surgery/hospitalization, or current immobilization. No daily anticoagulant, aspirin/other antiplatelet, or regular NSAID use; no other anticoagulant besides intermittent certoparin. Usual medicines: levothyroxine 25 mcg daily, vitamin B12, vitamin D and magnesium; ophthalmic antibiotic completed. NKDA. Reported weight about 68 kg (last measured 68.7 kg on 08/15/2022; not remeasured today). Hgb 13.4 g/dL, platelets 244 K/uL, creatinine 0.78 mg/dL. No additional safety labs needed now unless status changes.\n\nAssessment: Increased travel-associated VTE risk from prior VTE and inherited thrombophilia; no reported symptoms of acute VTE or bleeding. Bleeding risk appears low on available history/labs, but is not zero. Remote provoked DVT/heterozygous mutation alone does not establish need for indefinite anticoagulation. Travel prophylaxis should be individualized; evidence is limited and guidelines differ.\n\nPlan / shared decision-making initiated:\n1. Portal reply SENT explaining two reasonable options for these long flights: properly fitted below-knee graduated compression stockings, 15-30 mmHg at ankle, versus prophylactic LMWH. Discussed possible benefit, limited travel-specific evidence/off-label use, injection burden/bruising, bleeding and rare thrombocytopenia. Neither option eliminates risk. Mobility with either approach; stockings may also accompany LMWH.\n2. Preference still pending. No new anticoagulant prescription/order issued and no final agreement to injections documented. Do not automatically renew broad PRN certoparin for illness/bed rest or assume dose equivalence between LMWH products. Aspirin/DOACs are not being substituted.\n3. If she elects LMWH after discussion and safety status remains unchanged, proposed regimen for final confirmation: enoxaparin 40 mg/0.4 mL SC once 2-4 hours before each of the April 14 and April 28 flights only; 2 prefilled syringes total, no refills. No daily dosing during trip or extra doses. Weight/renal function support standard prophylactic dosing. Confirm pharmacy, final prescription and injection instructions before use; do not overlap with certoparin/another anticoagulant. This is a conditional proposal, NOT an issued prescription.\n4. Advised walking every 1-2 hours, ankle/calf exercises while seated, aisle seat if possible, normal hydration, and avoidance of prolonged immobility/sedatives. Avoid aspirin/NSAIDs with LMWH unless specifically directed. Reassess new bleeding, pregnancy, medications, illness, surgery, immobilization or itinerary changes. Future travel/bed-rest prophylaxis requires separate review.\n5. Urgent assessment for unilateral leg symptoms; emergency care for chest pain, sudden dyspnea, hemoptysis or syncope. With anticoagulation, urgent evaluation for significant bleeding, melena, severe headache or head injury.\n\nFollow-up: Requested reply by April 11 with preference/questions/pharmacy or brief phone discussion to complete shared decision-making before April 14. Existing hematology e-consult pending; review recommendations when available, no duplicate referral. If no response within 1-2 days, outreach is needed before departure. Leave encounter open awaiting patient input and final travel plan.",
+  "patientReply": "Hi Annika,\n\nI reviewed your message, the nurse's safety review, and your April 10 labs. Your blood counts, platelets, and kidney function are normal. Your previous DVT and prothrombin mutation put you at higher risk of a travel-related clot during the April 14 (12-hour) and April 28 (11-hour) flights.\n\nFor both flights, walk regularly (about every 1-2 hours), do ankle/calf exercises while seated, and choose an aisle seat if possible. Avoid prolonged immobility or sedatives and stay normally hydrated. In addition, two reasonable options for someone with your history are:\n1. Properly fitted, below-knee graduated compression stockings (15-30 mmHg at the ankle), which avoid medication-related bleeding; or\n2. A preventive low-molecular-weight heparin injection before each long flight. You would still move regularly, and stockings can also be worn.\n\nInjections may reduce clot risk, but the evidence for travel prevention is limited and this use is off-label. They can cause bruising or bleeding (rarely serious bleeding or low platelets). Neither approach eliminates clot risk. Given your history, injections are reasonable, but not an automatic requirement; I would like to choose the approach with you after weighing these tradeoffs.\n\nIf you prefer injections, we can finalize a travel-only enoxaparin plan: one preventive dose before each of these two flights, not daily during the trip. Certoparin and enoxaparin are not directly dose-interchangeable. No new prescription has been sent yet; please do not substitute or combine injections on your own. Aspirin or an oral blood thinner is not a recommended substitute for this plan. Avoid ibuprofen/naproxen or aspirin with heparin unless specifically advised.\n\nPlease reply by tomorrow with your preference, questions, and preferred pharmacy, or call the office for a brief phone discussion so we can finalize this before April 14. The hematology e-consult is also pending. Please tell us about any new bleeding, pregnancy, medication changes, illness, surgery, or itinerary changes before using an anticoagulant. This would not be a standing prescription for bed rest, illness, or future trips.\n\nSeek prompt medical assessment for new one-sided leg pain/swelling. Call emergency services for sudden shortness of breath, chest pain, coughing blood, or fainting. If taking an anticoagulant, seek urgent care for significant bleeding, black stools, severe headache, or a head injury.\n\nDr. Alvarez",
+  "noteExam": {},
+  "advisoryResponses": [],
+  "visitSigned": false,
+  "runId": "ayfn1mcx"
+ },
+ "auditLog": [
+  {
+   "ts": "2026-10-28T21:03:30.225Z",
+   "actor": "agent",
+   "action": "reset_state",
+   "detail": "adrenal-incidentaloma"
+  },
+  {
+   "ts": "2026-10-28T21:03:30.596Z",
+   "actor": "agent",
+   "action": "load_case",
+   "detail": "vte-prophylaxis-travel"
+  },
+  {
+   "ts": "2026-10-28T21:03:31.107Z",
+   "actor": "agent",
+   "action": "switch_activity",
+   "detail": "chart-review"
+  },
+  {
+   "ts": "2026-10-28T21:03:44.836Z",
+   "actor": "human",
+   "action": "chart_review_subtab",
+   "detail": "Notes/Trans"
+  },
+  {
+   "ts": "2026-10-28T21:03:44.836Z",
+   "actor": "human",
+   "action": "open_note",
+   "detail": "n8"
+  },
+  {
+   "ts": "2026-10-28T21:04:38.687Z",
+   "actor": "human",
+   "action": "chart_review_subtab",
+   "detail": "Labs"
+  },
+  {
+   "ts": "2026-10-28T21:04:57.943Z",
+   "actor": "human",
+   "action": "chart_review_subtab",
+   "detail": "Referrals"
+  },
+  {
+   "ts": "2026-10-28T21:05:06.715Z",
+   "actor": "human",
+   "action": "chart_review_subtab",
+   "detail": "Notes/Trans"
+  },
+  {
+   "ts": "2026-10-28T21:05:26.379Z",
+   "actor": "human",
+   "action": "switch_activity",
+   "detail": "medications"
+  },
+  {
+   "ts": "2026-10-28T21:05:40.298Z",
+   "actor": "human",
+   "action": "switch_activity",
+   "detail": "problem-list"
+  },
+  {
+   "ts": "2026-10-28T21:05:45.793Z",
+   "actor": "human",
+   "action": "switch_activity",
+   "detail": "notewriter"
+  },
+  {
+   "ts": "2026-10-28T21:06:16.255Z",
+   "actor": "human",
+   "action": "switch_activity",
+   "detail": "chart-review"
+  },
+  {
+   "ts": "2026-10-28T21:06:49.085Z",
+   "actor": "human",
+   "action": "send_patient_reply",
+   "detail": "2454 characters"
+  },
+  {
+   "ts": "2026-10-28T21:06:53.291Z",
+   "actor": "human",
+   "action": "switch_activity",
+   "detail": "notewriter"
+  },
+  {
+   "ts": "2026-10-28T21:07:13.743Z",
+   "actor": "human",
+   "action": "toggle_exam_panel",
+   "detail": "hidden"
+  },
+  {
+   "ts": "2026-10-28T21:07:55.058Z",
+   "actor": "human",
+   "action": "save_deliverable",
+   "detail": "4345 chars"
+  },
+  {
+   "ts": "2026-10-28T21:08:00.173Z",
+   "actor": "human",
+   "action": "switch_activity",
+   "detail": "chart-review"
+  },
+  {
+   "ts": "2026-10-28T21:08:36.727Z",
+   "actor": "human",
+   "action": "switch_activity",
+   "detail": "notewriter"
+  },
+  {
+   "ts": "2026-10-28T21:10:19.939Z",
+   "actor": "human",
+   "action": "save_deliverable",
+   "detail": "4316 chars"
+  },
+  {
+   "ts": "2026-10-28T21:10:19.940Z",
+   "actor": "human",
+   "action": "sign_note",
+   "detail": "4316 chars A&P"
+  },
+  {
+   "ts": "2026-10-28T21:10:25.211Z",
+   "actor": "human",
+   "action": "switch_activity",
+   "detail": "chart-review"
+  }
+ ]
+}

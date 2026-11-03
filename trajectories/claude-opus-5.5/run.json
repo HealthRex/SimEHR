@@ -1,0 +1,38 @@
+{
+  "model": "anthropic/claude-opus-5.5",
+  "provider": "openrouter",
+  "agent": "responses_stateless",
+  "reasoning_effort": "max",
+  "computer_use_tool": "computer_toolset_20260801",
+  "viewport": [
+    1280,
+    800
+  ],
+  "max_steps": 200,
+  "images_kept_in_context": 5,
+  "judge": {
+    "model": "gpt-5.5",
+    "runs": 1,
+    "effort": "high"
+  },
+  "started": "2026-10-28T14:25:47",
+  "ended": "2026-10-28T14:35:29",
+  "result": {
+    "verdict": "FAIL",
+    "scored_passed": 5.0,
+    "scored_max": 6.0,
+    "steps": 69,
+    "turns": 59,
+    "seconds": 581.0
+  },
+  "usage": {
+    "input_tokens": 1483728,
+    "output_tokens": 30031,
+    "reasoning_tokens": 20307,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 0,
+    "requests": 60,
+    "provider_cost_usd": 6.535532
+  },
+  "cost_usd": 6.535532
+}

@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SimEHR: a high-fidelity EHR environment for computer-use agents</title>
+<link rel="icon" type="image/svg+xml" href="assets/icon/simehr-mark.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icon/simehr-mark-32.png">
+<link rel="apple-touch-icon" href="assets/icon/simehr-mark-180.png">
+<meta name="description" content="SimEHR is a pixel-level, interactive simulation of the EHR interface physicians use every day, built to evaluate computer-use agents the way a clinician works.">
+<style>
+  :root {
+    --ink: #1f2428; --muted: #6b7280; --rule: #e6e8eb; --soft: #f7f8f9; --link: #1f4e8c;
+    --serif: "Charter", "Iowan Old Style", "Palatino", "Georgia", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --nav-w: 220px; --text-w: 680px; --wide-w: 880px; --pad: 48px;
+    /* nav + content travel together as one centred shell; on narrower screens the nav sits at the left edge */
+    --shell-w: calc(var(--nav-w) + var(--wide-w) + 2 * var(--pad));
+    --shell-x: max(0px, calc((100% - var(--shell-w)) / 2));
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; color: var(--ink); background: #fff; font: 17.5px/1.65 var(--serif); }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; text-underline-offset: 3px; }
+  code, pre { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+  code { font-size: .88em; background: var(--soft); padding: 1px 5px; border-radius: 4px; }
+  pre { font-size: 14px; line-height: 1.55; background: var(--soft); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; overflow-x: auto; }
+  pre code { background: none; padding: 0; }
+
+  /* left navigation */
+  .side { position: fixed; top: 0; left: var(--shell-x); bottom: 0; width: var(--nav-w); padding: 44px 28px; border-right: 1px solid var(--rule); font-family: var(--sans); }
+  .side .name { font-weight: 700; font-size: 16px; letter-spacing: .01em; color: var(--ink); margin-bottom: 4px; display: block; }
+  .side .tag { font-size: 12.5px; color: var(--muted); line-height: 1.4; margin-bottom: 26px; }
+  .side ul { list-style: none; margin: 0; padding: 0; }
+  .side li { margin: 0 0 10px; }
+  .side li a { color: var(--muted); font-size: 14px; }
+  .side li a:hover, .side li a.on { color: var(--ink); text-decoration: none; }
+  .side .foot { position: absolute; left: 28px; bottom: 36px; font-size: 13px; }
+  .byline .gh { display: inline-flex; align-items: center; gap: 5px; color: var(--muted); vertical-align: -3px; border-bottom: 0; }
+  .byline .gh:hover { color: var(--ink); text-decoration: none; }
+  .byline .gh svg { width: 16px; height: 16px; fill: currentColor; }
+
+  main { margin-left: calc(var(--shell-x) + var(--nav-w)); max-width: calc(var(--shell-w) - var(--nav-w)); padding: 64px var(--pad) 96px; }
+  article { max-width: var(--wide-w); }
+  .col { max-width: var(--text-w); margin-left: auto; margin-right: auto; }
+  .wide { max-width: var(--wide-w); }
+
+  h1 { font-size: 38px; line-height: 1.18; font-weight: 600; letter-spacing: -.012em; margin: 0 0 14px; }
+  .dek { font-size: 21px; line-height: 1.45; color: #3b4248; margin: 0 0 10px; }
+  .byline { font-family: var(--sans); font-size: 13.5px; color: var(--muted); margin: 0 0 36px; }
+  .tldr { font-family: var(--sans); font-size: 13px; font-weight: 600; letter-spacing: .08em; color: var(--muted); margin: 0 0 10px; }
+  h2 { font-size: 26px; line-height: 1.25; font-weight: 600; letter-spacing: -.01em; margin: 56px 0 14px; }
+  h3 { font-size: 17px; font-family: var(--sans); font-weight: 600; margin: 24px 0 8px; }
+  p { margin: 0 0 18px; }
+  ul.plain { padding-left: 22px; margin: 0 0 18px; }
+  ul.plain li { margin: 0 0 8px; padding-left: 2px; }
+  ul.plain li::marker { color: var(--muted); }
+  ul.plain b a { color: var(--ink); border-bottom: 1px solid #c9ced3; }
+  ul.plain b a:hover { text-decoration: none; border-bottom-color: var(--ink); }
+  :target { scroll-margin-top: 24px; }
+  .figure { margin: 26px 0 30px; }
+  .figure img, .figure video { display: block; width: 100%; border: 1px solid var(--rule); border-radius: 4px; background: #0f1216; }
+  .figure figcaption { font-family: var(--sans); font-size: 13px; color: var(--muted); margin-top: 8px; line-height: 1.45; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px 24px; margin: 26px 0 30px; }
+  .grid .figure { margin: 0; }
+
+  .instruction { margin: 22px 0 26px; padding: 4px 0 4px 22px; border-left: 2px solid var(--ink); }
+  .instruction .t { font-family: var(--sans); font-weight: 600; font-size: 15px; margin-bottom: 8px; }
+  .instruction ul { padding-left: 20px; margin: 0; }
+  .instruction li { margin: 0 0 6px; }
+
+  /* viewer */
+  .viewer { margin: 22px 0 10px; }
+  .viewer .tabs { font-family: var(--sans); font-size: 14px; display: flex; gap: 18px; align-items: baseline; margin-bottom: 10px; }
+  .viewer .tabs a { color: var(--muted); border-bottom: 2px solid transparent; padding-bottom: 3px; }
+  .viewer .tabs a.on { color: var(--ink); border-bottom-color: var(--ink); text-decoration: none; }
+  .viewer .tabs .open { margin-left: auto; font-size: 13px; }
+  .viewer iframe { display: block; width: 100%; height: 600px; border: 1px solid var(--rule); border-radius: 6px; background: #0f1216; }
+  .viewer .hint { font-family: var(--sans); font-size: 13px; color: var(--muted); margin-top: 8px; line-height: 1.45; }
+
+  footer { margin-left: calc(var(--shell-x) + var(--nav-w)); max-width: calc(var(--shell-w) - var(--nav-w)); padding: 0 var(--pad) 48px; font-family: var(--sans); font-size: 13px; color: var(--muted); text-align: center; }
+  @media (max-width: 900px) {
+    .side { position: static; width: auto; border-right: 0; border-bottom: 1px solid var(--rule); padding: 20px 24px; }
+    .side .foot { position: static; margin-top: 10px; }
+    .side ul { display: flex; flex-wrap: wrap; gap: 4px 16px; }
+    main, footer { margin-left: 0; max-width: none; padding-left: 24px; padding-right: 24px; }
+    h1 { font-size: 30px; } .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="side">
+  <a class="name" href="#top">SimEHR</a>
+  <div class="tag">A high-fidelity EHR environment for computer-use agents</div>
+  <ul>
+    <li><a href="#top">Overview</a></li>
+    <li><a href="#why">Why the real interface</a></li>
+    <li><a href="#environment">The environment</a></li>
+    <li><a href="#demo">Demo task</a></li>
+    <li><a href="#trajectory">Trajectory viewer</a></li>
+    <li><a href="#next">What's next</a></li>
+    <li><a href="#try">Try it</a></li>
+    <li><a href="#cite">Citation</a></li>
+  </ul>
+</nav>
+
+<main>
+<article>
+  <div class="col" id="top">
+    <h1>SimEHR: a high-fidelity EHR environment for computer-use agents</h1>
+    <p class="dek">A highly realistic, interactive simulation of the electronic health record interfaces that physicians use every day, built so that agents can be evaluated under the conditions clinicians actually work in: familiar screens, mouse and keyboard input, and full patient charts.</p>
+    <p class="byline">Preview release · <a class="gh" href="https://github.com/HealthRex/SimEHR"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a></p>
+  </div>
+
+  <div class="figure wide"><video autoplay muted loop playsinline poster="assets/fig/hero_poster.jpg" aria-label="Claude Opus 5.5 working through the demo task in SimEHR"><source src="assets/hero_trajectory.mp4" type="video/mp4"></video><figcaption>Claude Opus 5.5 working through the demo task: the recorded actions replayed in the current build. The agent sees screenshots of this window and acts only through clicks, keystrokes, and scrolling. Each action is marked in red.</figcaption></div>
+
+  <div class="col">
+    <p class="tldr">TL;DR</p>
+    <ul class="plain">
+      <li><b><a href="#environment">A realistic EHR</a></b>, with chart review, results, orders, notes and patient messages, so that agents work through a clinical task end to end in the interface.</li>
+      <li><b><a href="#goals">Fully open source and easy to adapt.</a></b> Runs on your own machine; load your own patient charts as plain JSON files, and change the interface and workflows as your study requires.</li>
+      <li><b><a href="#demo">Available now</a></b> as a preview release, with sample data, a demo task, and two recorded agent sessions.</li>
+      <li><b><a href="#next">Coming next:</a></b> PhysicianBench-UI, a benchmark of realistic, long-horizon, physician-authored clinical workflows in this environment, and an ARISEKit module that turns your own clinical data into executable computer-use tasks.</li>
+    </ul>
+
+    <h2 id="why">Why the real interface matters</h2>
+    <p>Benchmarks determine what gets optimized. For AI agents meant to work in medicine, one design principle matters more than any other: <b>the agent should do the work the way a person does it, in the same software.</b> A physician handling patient care opens the chart, reads notes, checks results, places orders, and writes notes, all through a single interface whose layout and conventions shape every step and capture the clinical decision-making.</p>
+    <p>Most existing evaluations of medical AI leave this out. Whether they pose multiple-choice questions, present case vignettes, or expose patient data through an API or SQL query, they hand the model the relevant information, already gathered and cleanly formatted, and grade the answer. What the interface demands never enters the measurement: finding the right tab, reading scanned reports, noticing a result that was never flagged, signing an order rather than leaving it as a draft. The few interface-based benchmarks rely on task-specific reconstructions or on software that looks and behaves little like a deployed EHR. And while open-source EHRs support real practice, they still differ significantly from the commercial systems that dominate hospital care.</p>
+    <p>What has been missing is a <b>high-fidelity, interactive EHR environment</b>: one that reflects the information layout and interactions of the systems in use, that users control completely, and that never touches a live patient record. Without it, a score obtained on clean, well-formatted input, or in a simplified interface, says little about what the same agent would do in front of a real chart a physician actually sees.</p>
+
+    <h2 id="environment">The environment</h2>
+    <p>SimEHR is a web application that models the information layout and interaction patterns of common commercial EHRs. Its chart organization and navigation were refined over several rounds with practicing physicians. It covers the key surfaces of the clinical workflow:</p>
+    <ul class="plain">
+      <li><b>Chart Review</b>, with the familiar record categories (encounters, notes, letters, labs, imaging, cardiac studies, medications, referrals, procedures, and more), each with its filter chips and a report preview.</li>
+      <li><b>Results Review</b>, a test-by-date matrix with trend graphs.</li>
+      <li><b>Patient Summary</b>, <b>Problem List</b>, <b>Medications</b>, and <b>Demographics</b>, plus the persistent patient sidebar with vitals, allergies, problems, and recent activity.</li>
+      <li><b>Orders</b>, with search-as-you-type and dose, route, frequency, and duration for medications.</li>
+      <li><b>Clinical Notes</b>, with a free-text assessment and plan that can be saved or signed.</li>
+      <li><b>Patient messages</b> answered from within the chart, an alerts bell, and a check that lists missing items before an encounter is signed.</li>
+    </ul>
+  </div>
+
+  <div class="grid wide">
+    <figure class="figure"><img src="assets/fig/patient_message.png" alt="A patient message with its reply box"><figcaption>A patient message in Chart Review, with the reply box under it.</figcaption></figure>
+    <figure class="figure"><img src="assets/fig/results_review.png" alt="Results Review"><figcaption>Results Review: tests by date, with per-panel trend graphs.</figcaption></figure>
+    <figure class="figure"><img src="assets/fig/orders.png" alt="Orders"><figcaption>Orders: search, a signature cart, and dose, route, frequency, and duration for medications.</figcaption></figure>
+    <figure class="figure"><img src="assets/fig/clinical_notes.png" alt="Clinical Notes"><figcaption>Clinical Notes: exam picker, generated preview, and the assessment and plan.</figcaption></figure>
+  </div>
+
+  <div class="col">
+    <p>Beneath the interface is a single canonical patient model. Every screen is a projection of this underlying data: the same laboratory result appears as a grouped report in Chart Review and in Results Review, and no two views can disagree. The historical record is immutable. Everything an agent episode produces (orders, notes, etc.) is held in a separate episode state, and every navigation step and clinical action is written to an audit log. Each episode starts from a clean state with the specified patient and starting screen, so evaluation is reproducible and every output is attributable to the agent that produced it.</p>
+    <p>Agents observe only screenshots of a 1280×800 viewport and act through clicks, typing, key presses, and scrolling. The harness maps each provider's native computer-use or function-calling interface onto the same browser actions, so models from different vendors run under identical conditions. The model never sees the DOM, the data files, or grading rubrics.</p>
+    <p id="goals">Three properties were design goals from the outset.</p>
+    <ul class="plain">
+      <li><b>Fully open source and locally hosted</b>: the whole environment is published as source, runs in a browser on your own machine, resets in milliseconds, and records everything.</li>
+      <li><b>Easy to adapt</b>: a patient chart is one JSON file in a documented schema, so adding a file and registering it renders the entire chart, and labels, orderables, and workflows are ordinary application code.</li>
+      <li><b>One environment with several uses</b>: the same interface serves agent evaluation, a participant mode for clinician studies, and failure analysis, since every screenshot, action, and audit entry is retained and recorded episodes can be replayed in a newer build.</li>
+    </ul>
+
+    <h2 id="demo">A demo task</h2>
+    <p>The preview includes one task, written with a clinician collaborator. It begins the way real work begins, with a message. This is the complete task prompt:</p>
+    <div class="instruction">
+      <div class="t">Patient message: travel prescription review</div>
+      <ul>
+        <li>New messages are available for a patient. Please review and address accordingly as the physician.</li>
+        <li>Save your documentation and send any intended patient reply.</li>
+        <li>Sign orders you intend to issue; drafts do not count as issued orders.</li>
+        <li>Sign or close the encounter only when appropriate, not to submit the task. An encounter awaiting patient input may remain open.</li>
+        <li>When your EHR work is saved, stop and state any pending follow-up.</li>
+        <li>A patient message is answered from the message itself: open it in Chart Review (Encounters or Notes) and use the reply box under it.</li>
+      </ul>
+    </div>
+    <p>Two frontier agents worked through the task in the preview build, once each. Their sessions are reproduced below: every action the agent took and its reasoning at each turn, with the screens re-rendered by replaying the recorded actions in the current build. Pass and fail marks come from automated checkpoints scored by an LLM judge.</p>
+
+    <h2 id="trajectory">Trajectory viewer</h2>
+  </div>
+
+  <div class="viewer wide">
+    <div class="tabs">
+      <a href="#trajectory" class="on" data-run="opus55" onclick="return pick(this)">Claude Opus 5.5</a>
+      <a href="#trajectory" data-run="astra" onclick="return pick(this)">GPT-6 Astra</a>
+      <a class="open" id="tv-open" href="trajectories/opus55/index.html" target="_blank">Open in a new tab ↗</a>
+    </div>
+    <iframe id="tv-frame" src="trajectories/opus55/index.html" title="Agent trajectory viewer"></iframe>
+    <div class="hint">Press play, drag the slider, or use the arrow keys. The magnifier shows the region under the pointer at 2.5×. “Reasoning” is the model's own summary of its thinking at that turn; “Said” is what it chose to say.</div>
+  </div>
+
+  <div class="col">
+    <h2 id="next">What's next</h2>
+    <p>PhysicianBench-UI builds on this environment: a benchmark of realistic, long-horizon clinical workflows, each authored and reviewed by physicians, in which an agent reads the longitudinal chart, reasons about the case, and carries out the clinical care through the interface. It will be released with the paper, together with the harness and the task set.</p>
+    <p>In parallel, we are extending <a href="https://arisekit.com/">ARISEKit</a>, a toolkit for building medical AI evaluations, so that anyone with a clinical case of their own can bring it into this environment and turn it into an executable computer-use task end to end.</p>
+
+    <h2 id="try">Try it</h2>
+    <p>The environment is open source: <a href="https://github.com/HealthRex/SimEHR">github.com/HealthRex/SimEHR</a>.</p>
+<pre><code>git clone https://github.com/HealthRex/SimEHR.git &amp;&amp; cd SimEHR
+npm install &amp;&amp; npm run dev        # http://localhost:8766</code></pre>
+    <p>The app opens on the demo chart; charts you add are reachable with <code>?case=&lt;id&gt;</code> or from Patient Lists. The preview includes the demo chart, fully synthetic, the demo task above, the case schema (<code>public/cases/SCHEMA.md</code>) for bringing your own de-identified or synthetic charts, and a <code>window.SimEHR</code> API for loading cases and reading state and audit logs programmatically. The repository also carries the demo task files and the two recorded sessions: every screenshot, action, and reasoning step, the final chart state, and the judge's verdicts. Agents and harness adapters will ship with the benchmark release.</p>
+    <p>SimEHR is a research simulation and reproduces the workflows described above rather than the whole EHR. All patient data shown here is synthetic. The code is released under the Apache License 2.0; the synthetic charts, the demo task, the recorded sessions, and this page are released under CC BY 4.0.</p>
+
+    <h2 id="cite">Citation</h2>
+    <p>If you use SimEHR in your work, please cite the preview release.</p>
+<pre><code>@misc{simehr2026,
+  title        = {SimEHR: A High-Fidelity EHR Environment for Computer-Use Agents},
+  author       = {{SimEHR Team}},
+  year         = {2026},
+  howpublished = {\url{https://github.com/HealthRex/SimEHR}},
+  note         = {Preview release}
+}</code></pre>
+  </div>
+</article>
+</main>
+<footer>SimEHR · preview release · all patient data is synthetic.</footer>
+
+<script>
+  // The viewer shows a 1280x800 screen beside a 300px panel; size the frame so the screen fits without letterboxing.
+  function fitViewer() {
+    const w = document.querySelector('.viewer').clientWidth;
+    document.getElementById('tv-frame').style.height = Math.round((w - 300) * 800 / 1280 + 150) + 'px';
+  }
+  window.addEventListener('resize', fitViewer); fitViewer();
+  function pick(a) {
+    document.querySelectorAll('.viewer .tabs a[data-run]').forEach(x => x.classList.toggle('on', x === a));
+    document.getElementById('tv-frame').src = 'trajectories/' + a.dataset.run + '/index.html';
+    document.getElementById('tv-open').href = 'trajectories/' + a.dataset.run + '/index.html';
+    return false;
+  }
+  // highlight the section in view
+  const links = [...document.querySelectorAll('.side li a')];
+  const ids = links.map(a => a.getAttribute('href').slice(1));
+  function spy() {
+    let cur = ids[0];
+    for (const id of ids) { const el = document.getElementById(id); if (el && el.getBoundingClientRect().top < 120) cur = id; }
+    links.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + cur));
+  }
+  window.addEventListener('scroll', spy); spy();
+</script>
+</body>
+</html>

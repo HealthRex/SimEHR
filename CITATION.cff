@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use SimEHR in your work, please cite the preview release."
+type: software
+title: "SimEHR: A High-Fidelity EHR Environment for Computer-Use Agents"
+authors:
+  - name: "SimEHR Team"
+version: preview
+license: Apache-2.0
+repository-code: "https://github.com/HealthRex/SimEHR"
+url: "https://healthrex.github.io/SimEHR/"

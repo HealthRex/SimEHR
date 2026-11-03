@@ -1,0 +1,27 @@
+{
+  "id": "travel_vte_prophylaxis",
+  "version": "v1",
+  "case": "vte-prophylaxis-travel",
+  "config": {
+    "start_activity": "chart-review",
+    "reset": true
+  },
+  "title": "Travel VTE Prophylaxis — Patient Message",
+  "specialty": "Family Medicine",
+  "tags": [
+    "Hematology",
+    "Primary Care",
+    "Medication Prescribing",
+    "Shared Decision Making"
+  ],
+  "difficulty": "medium",
+  "task_timestamp": "2023-04-10T12:00:00Z",
+  "practitioner": {
+    "id": "dr-dana-alvarez",
+    "name": "Dana Alvarez",
+    "role": "Family Medicine (PCP)"
+  },
+  "patient": {
+    "mrn": "MRN1470939445"
+  }
+}

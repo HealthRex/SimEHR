@@ -1,0 +1,11 @@
+{
+  "default": "vte-prophylaxis-travel",
+  "cases": [
+    {
+      "id": "vte-prophylaxis-travel",
+      "label": "VTE prophylaxis — pre-travel patient message (demo task)",
+      "file": "vte-prophylaxis-travel.json",
+      "specialty": "Family Medicine"
+    }
+  ]
+}

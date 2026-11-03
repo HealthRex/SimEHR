@@ -1,0 +1,31 @@
+{
+  "name": "sim-ehr",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 8766",
+    "build": "next build",
+    "start": "next start -p 8766",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "smoke": "node smoke.mjs",
+    "contract": "node contract.mjs"
+  },
+  "dependencies": {
+    "next": "15.5.28",
+    "react": "19.1.10",
+    "react-dom": "19.1.10"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "autoprefixer": "^10.4.20",
+    "playwright": "^1.61.1",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.0"
+  },
+  "description": "A simulated EHR for clinical user-interface research, running on synthetic patient data.",
+  "license": "Apache-2.0"
+}
